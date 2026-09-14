@@ -38,7 +38,14 @@ Website profil profesional dan showcase portofolio interaktif untuk **Aditya Fau
 
 ---
 
-## 💻 Cara Membuka & Menjalankan
+## 🌐 Live Website & Repository
+
+- **Live URL (GitHub Pages):** [https://luckywizardd.github.io/aditya-fauziyanto-portfolio/](https://luckywizardd.github.io/aditya-fauziyanto-portfolio/)
+- **GitHub Repository:** [https://github.com/LuckyWizardd/aditya-fauziyanto-portfolio](https://github.com/LuckyWizardd/aditya-fauziyanto-portfolio)
+
+---
+
+## 💻 Cara Membuka & Menjalankan Lokal
 
 ### Cara 1: Langsung Buka File di Browser
 Cukup **double-click** file `index.html` di Windows Explorer (atau drag & drop ke Chrome / Edge / Firefox).

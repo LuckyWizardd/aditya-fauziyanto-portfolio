@@ -1,0 +1,15 @@
+# NDA Confidential Client Project Decks & Materials
+Portofolio/
+Portofolio/*
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+
+# Local Node / Package Cache
+node_modules/

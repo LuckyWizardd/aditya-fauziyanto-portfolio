@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Fauziyanto | Senior ITSM Consultant & Atlassian Solutions Architect</title>
+  
+  <meta name="description" content="Portfolio & Professional Profile of Aditya Fauziyanto - Senior ITSM Consultant & Atlassian Solutions Architect with 7+ years experience in JSM, Cloud Migration, ITIL 4 Specialist CDS.">
+  <meta name="author" content="Aditya Fauziyanto">
+  <meta name="keywords" content="ITSM Consultant, Atlassian Architect, Jira Service Management, JSM Assets, ITIL 4 Specialist, Cloud Migration, iZeno">
+
+  <!-- OpenGraph Social Sharing -->
+  <meta property="og:title" content="Aditya Fauziyanto — Senior ITSM Consultant & Solutions Architect">
+  <meta property="og:description" content="7+ Years of Enterprise IT Service Management, Atlassian Ecosystem, and ITIL 4 Best Practices.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            atlassian: {
+              blue: '#0052cc',
+              sky: '#2684ff',
+              navy: '#0747a6',
+              dark: '#172b4d',
+            },
+            darkbg: {
+              900: '#070b14',
+              800: '#0c1222',
+              700: '#131d35',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-darkbg-900 text-slate-100 transition-colors duration-300 selection:bg-blue-600 selection:text-white">
+
+  <!-- Scroll Progress Indicator -->
+  <div class="fixed top-0 left-0 w-full h-1 z-50 bg-transparent no-print">
+    <div id="scroll-progress" class="h-full bg-gradient-to-r from-blue-500 via-sky-400 to-indigo-500 w-0 transition-all duration-150"></div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 border-b border-slate-800/80 bg-darkbg-900/80 glass-nav no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Monogram -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 to-sky-400 flex items-center justify-center font-bold text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200">
+          AF
+        </div>
+        <div>
+          <span class="font-bold text-lg tracking-tight block text-white group-hover:text-blue-400 transition-colors">
+            Aditya Fauziyanto
+          </span>
+          <span class="text-xs text-slate-400 block -mt-0.5 font-medium tracking-wide">
+            Senior ITSM Consultant & Architect
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#hero" class="nav-link hover:text-white transition-colors">Overview</a>
+        <a href="#expertise" class="nav-link hover:text-white transition-colors">Expertise</a>
+        <a href="#experience" class="nav-link hover:text-white transition-colors">Experience</a>
+        <a href="#projects" class="nav-link hover:text-white transition-colors">Case Studies</a>
+        <a href="#certifications" class="nav-link hover:text-white transition-colors">Credentials</a>
+        <a href="#contact" class="nav-link hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn p-2.5 rounded-xl border border-slate-700/60 bg-slate-800/50 hover:bg-slate-700/60 text-slate-300 hover:text-white transition-colors" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          <i data-lucide="sun" class="theme-icon-sun w-4 h-4"></i>
+          <i data-lucide="moon" class="theme-icon-moon w-4 h-4 hidden"></i>
+        </button>
+
+        <!-- Download CV Action -->
+        <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-500 hover:to-sky-400 text-white shadow-md shadow-blue-600/25 transition-all transform hover:-translate-y-0.5">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Download CV</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl border border-slate-700/60 bg-slate-800/50 text-slate-300 hover:text-white" aria-label="Open Menu">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-darkbg-800/95 px-6 py-4 space-y-3">
+      <a href="#hero" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Overview</a>
+      <a href="#expertise" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Expertise</a>
+      <a href="#experience" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Experience</a>
+      <a href="#projects" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Case Studies</a>
+      <a href="#certifications" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Credentials</a>
+      <a href="#contact" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Contact</a>
+      <div class="pt-2 border-t border-slate-700 flex flex-col gap-2">
+        <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-xs font-semibold bg-blue-600 text-white">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Download Official CV (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="pt-24">
+
+    <!-- ===================================================================== -->
+    <!-- 1. HERO SECTION                                                       -->
+    <!-- ===================================================================== -->
+    <section id="hero" class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28">
+      
+      <!-- Background Ambient Glows -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-blue-600/10 blur-[130px] rounded-full pointer-events-none"></div>
+      <div class="absolute -top-20 left-10 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Pitch & Profile Headline -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Availability & Credentials Badge -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-medium">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span>Open to Enterprise Opportunities & Solutions Advisory</span>
+            </div>
+
+            <!-- Title & Name -->
+            <div class="space-y-3">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Aditya Fauziyanto
+              </h1>
+              <p class="text-xl sm:text-2xl font-semibold gradient-text">
+                Senior ITSM Consultant & Atlassian Solutions Architect
+              </p>
+            </div>
+
+            <!-- Elevator Pitch -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+              Over <strong class="text-white font-semibold">7+ years of experience</strong> bridging complex enterprise business operations with high-impact <strong class="text-white font-semibold">Atlassian solutions</strong>. Specialized in large-scale <strong class="text-white font-semibold">Jira Service Management (JSM)</strong> implementations, <strong class="text-white font-semibold">Cloud Migrations</strong>, JSM Assets (CMDB) data modeling, and <strong class="text-white font-semibold">ITIL® 4 Specialist</strong> service lifecycle governance.
+            </p>
+
+            <!-- Quick Contacts & Badges -->
+            <div class="flex flex-wrap gap-y-2 gap-x-4 text-xs text-slate-400 pt-1">
+              <span class="inline-flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-400"></i>
+                Bekasi / Jakarta Area, Indonesia
+              </span>
+              <span class="inline-flex items-center gap-1.5">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
+                ITIL® 4 Specialist (CDS) Certified
+              </span>
+              <span class="inline-flex items-center gap-1.5">
+                <i data-lucide="building-2" class="w-3.5 h-3.5 text-sky-400"></i>
+                PT iZeno Teknologi Indonesia
+              </span>
+            </div>
+
+            <!-- Primary CTAs -->
+            <div class="pt-4 flex flex-wrap gap-3.5">
+              <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-600/30 transition-all transform hover:-translate-y-0.5">
+                <i data-lucide="file-down" class="w-4 h-4"></i>
+                <span>Download CV (PDF)</span>
+              </a>
+
+              <a href="https://wa.me/6285155333480?text=Halo%20Mas%20Aditya%2C%20saya%20tertarik%20berdiskusi%20mengenai%20peluang%20kerja%20%2F%20solusi%20ITSM." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 hover:text-white transition-all transform hover:-translate-y-0.5">
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+                <span>Chat via WhatsApp</span>
+              </a>
+
+              <button class="copy-btn inline-flex items-center gap-2 px-4 py-3.5 rounded-xl text-sm font-medium bg-slate-800/60 hover:bg-slate-700/80 border border-slate-700/80 text-slate-300 hover:text-white transition-all" data-copy="adityafauziyanto@gmail.com" data-label="Email Copied">
+                <i data-lucide="copy" class="w-4 h-4 text-blue-400"></i>
+                <span>Copy Email</span>
+              </button>
+            </div>
+
+            <!-- Social Links Bar -->
+            <div class="pt-2 flex items-center gap-4 text-sm text-slate-400">
+              <span class="text-xs uppercase tracking-wider font-semibold text-slate-500">Profiles:</span>
+              <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5">
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                <span>LinkedIn</span>
+              </a>
+              <span class="text-slate-700">•</span>
+              <a href="mailto:adityafauziyanto@gmail.com" class="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+                <span>adityafauziyanto@gmail.com</span>
+              </a>
+              <span class="text-slate-700">•</span>
+              <a href="tel:+6285155333480" class="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                <span>+62 851 5533 3480</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Profile Architecture Card -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Subtle card background gradient border -->
+              <div class="rounded-3xl p-0.5 bg-gradient-to-b from-blue-500/30 via-slate-700/20 to-transparent shadow-2xl">
+                <div class="rounded-[22px] bg-darkbg-800/90 border border-slate-800 p-6 sm:p-7 space-y-6">
+                  
+                  <!-- Card Header -->
+                  <div class="flex items-center justify-between border-b border-slate-700/60 pb-5">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 font-bold text-lg">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                      </div>
+                      <div>
+                        <h2 class="text-white font-bold text-base">Solutions Architecture</h2>
+                        <span class="text-xs text-slate-400">Atlassian & ITIL Core Stack</span>
+                      </div>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                      Enterprise Tier
+                    </span>
+                  </div>
+
+                  <!-- Stack Breakdown -->
+                  <div class="space-y-4">
+                    
+                    <!-- Atlassian JSM & Cloud -->
+                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
+                      <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400 mt-0.5">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                      </div>
+                      <div>
+                        <h3 class="text-white text-sm font-semibold">Jira Service Management (JSM)</h3>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
+                          Enterprise Workflows, Multi-tier SLAs, Portal Customization, JSM Assets (CMDB) & Automation Rules.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Cloud Migration -->
+                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
+                      <div class="p-2 rounded-lg bg-sky-500/10 text-sky-400 mt-0.5">
+                        <i data-lucide="cloud" class="w-4 h-4"></i>
+                      </div>
+                      <div>
+                        <h3 class="text-white text-sm font-semibold">Cloud Migration & Governance</h3>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
+                          Server / Data Center to Atlassian Cloud Enterprise migration (JCMA), data clean-up, and SSO/SAML integration.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- ITIL 4 Process Leadership -->
+                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
+                      <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 mt-0.5">
+                        <i data-lucide="git-merge" class="w-4 h-4"></i>
+                      </div>
+                      <div>
+                        <h3 class="text-white text-sm font-semibold">ITIL 4 Disciplines & Operations</h3>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
+                          Incident, Problem & RCA, Change Enablement, Service Catalog, and 8-person Service Desk Supervision.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Modern Edge & AI -->
+                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
+                      <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400 mt-0.5">
+                        <i data-lucide="bot" class="w-4 h-4"></i>
+                      </div>
+                      <div>
+                        <h3 class="text-white text-sm font-semibold">AI & Edge Automation</h3>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
+                          Atlassian Forge Apps, Cloudflare Workers, REST APIs, and automated RCA/incident triaging.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Quick Stats Bar Inside Card -->
+                  <div class="pt-2 border-t border-slate-700/60 grid grid-cols-2 gap-3 text-center">
+                    <div class="p-2.5 rounded-xl bg-slate-900/60">
+                      <span class="block text-lg font-extrabold text-blue-400">7+ Yrs</span>
+                      <span class="text-[11px] text-slate-400">ITSM Experience</span>
+                    </div>
+                    <div class="p-2.5 rounded-xl bg-slate-900/60">
+                      <span class="block text-lg font-extrabold text-emerald-400">ITIL® 4</span>
+                      <span class="text-[11px] text-slate-400">CDS Specialist</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================== -->
+    <!-- 2. EXECUTIVE METRICS & IMPACT BANNER                                   -->
+    <!-- ===================================================================== -->
+    <section class="border-y border-slate-800 bg-darkbg-800/60 py-10 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-white">7+</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Years Experience</div>
+            <p class="text-[11px] text-slate-500">ITSM, Presales & Delivery</p>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-blue-400">ITIL® 4</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Specialist CDS</div>
+            <p class="text-[11px] text-slate-500">Certified by PeopleCert / AXELOS</p>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-sky-400">345k+</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Tickets Migrated</div>
+            <p class="text-[11px] text-slate-500">Mass migration with zero data loss</p>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">12+</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Enterprise Deployments</div>
+            <p class="text-[11px] text-slate-500">Across SEA & Global Operations</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================== -->
+    <!-- 3. CORE EXPERTISE & ITIL COMPETENCIES                                 -->
+    <!-- ===================================================================== -->
+    <section id="expertise" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+            Core Competencies
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+            Enterprise Solutions & Technical Mastery
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Combining ITIL 4 best practices with Atlassian Cloud / Data Center engineering to design resilient, audit-compliant IT environments.
+          </p>
+        </div>
+
+        <!-- 6 Pillars Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Pillar 1: Atlassian ITSM & JSM -->
+          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-blue-500/40 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="layout-grid" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Jira Service Management (JSM)
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              Designing customer-centric service catalogs, multi-tier SLAs, automated request queues, and granular permission architectures for enterprise directorates.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Service Request Catalogs</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Dynamic Approvals & SLAs</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Incident & Change Workflows</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: Cloud Migration Architecture -->
+          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-sky-500/40 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-sky-600/10 border border-sky-500/20 text-sky-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="cloud-upload" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-sky-400 transition-colors">
+              Atlassian Cloud Migration
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              Leading comprehensive migrations from on-premise Jira Server / Data Center to Atlassian Cloud Enterprise with structured audit and zero downtime.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> JCMA Tooling & Pre-flight Audits</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> App Parity & Data Remediation</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> Atlassian Guard (SSO / SCIM)</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3: JSM Assets & CMDB -->
+          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-emerald-500/40 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="database" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+              JSM Assets & CMDB Architecture
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              Modeling object schemas, relational dependencies, and auto-discovery connectors (Device42) to map IT assets directly to incident blast-radius analysis.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Complex AQL Query Engineering</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Hardware & License Lifecycle</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Automated Discovery & Sync</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4: ITIL 4 Governance & RCA -->
+          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-amber-500/40 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-amber-600/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="git-pull-request" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+              ITIL® 4 Framework & Governance
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              Certified ITIL 4 Specialist (CDS). Structuring Incident, Problem Management (RCA), and Change Enablement practices aligned with international standards.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Root Cause Analysis (RCA) Playbooks</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Change Advisory Board (CAB) Workflows</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> SLA & KPI Compliance Auditing</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 5: Presales & Enterprise Consulting -->
+          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-indigo-500/40 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="briefcase" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
+              Presales & Technical Scoping
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              Leading discovery workshops, gap analyses, RFP/RFI responses, and effort estimation (SOW) that translate high-level business goals into winning proposals.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> SOW & Man-Day Estimation</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Gap Analysis & Architecture Specs</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Marketplace Add-on Evaluation</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 6: Modern Forge & AI Automation -->
+          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-purple-500/40 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-purple-600/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+              Atlassian Forge & Edge Automation
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              Developing custom serverless plugins on Atlassian Forge and Cloudflare Workers to automate ticket triaging, LLM-powered RCA hints, and custom integrations.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Atlassian Forge Apps & UI Kit</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Cloudflare Workers Edge Handlers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Jira REST API & Webhook Pipelines</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================== -->
+    <!-- 4. PROFESSIONAL EXPERIENCE TIMELINE                                   -->
+    <!-- ===================================================================== -->
+    <section id="experience" class="py-20 bg-darkbg-800/40 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+            Career Journey
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+            Proven Professional Experience
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Demonstrated track record of delivering enterprise-grade ITSM consulting, cloud transformations, and operational leadership.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline Container -->
+        <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+          
+          <!-- Experience 1: PT iZeno Teknologi Indonesia -->
+          <div class="relative pl-8 md:pl-10 group">
+            
+            <!-- Timeline Pin / Dot -->
+            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-darkbg-900 border-2 border-blue-500 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-lg shadow-blue-500/20">
+              <i data-lucide="building" class="w-4 h-4"></i>
+            </div>
+
+            <!-- Content Card -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-slate-700 transition-colors card-print">
+              
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                  2022 — Present (Active)
+                </span>
+                <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Jakarta / Hybrid
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white">Senior ITSM Consultant</h3>
+              <h4 class="text-base font-semibold text-blue-400 mb-4">PT iZeno Teknologi Indonesia</h4>
+
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Serving as the key Solutions Architect and Senior Consultant spearheading enterprise ITSM solutioning, Atlassian Cloud migrations, and pre-sales engineering across multinational clients.
+              </p>
+
+              <!-- Key Responsibilities & Achievements -->
+              <div class="space-y-2 text-sm text-slate-300">
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Led cloud migration initiatives for Atlassian products, orchestrating smooth transitions from on-premises deployments (Jira Server/DC) to Atlassian Cloud Enterprise.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Supported sales teams in closing high-value contracts by conducting deep discovery sessions, translating complex business requirements into winning technical proposals and SOW estimates.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Conducted comprehensive gap analyses on clients' legacy IT operations and formulated data-driven workflow improvements aligned with ITIL 4 best practices.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Architected bespoke Jira Service Management (JSM) configurations, custom Assets (Insight) object schemas, multi-tier SLAs, and automated approval matrices.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Developed and implemented strategic Service Desk KPIs, continuous monitoring dashboards, and executive reporting metrics.</span>
+                </div>
+              </div>
+
+              <!-- Tech & Skill Tags -->
+              <div class="flex flex-wrap gap-2 pt-5 mt-4 border-t border-slate-700/60">
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Jira Service Management</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Atlassian Cloud Migration</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">JSM Assets (CMDB)</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Pre-sales & SOW</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">ITIL 4 CDS</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Experience 2: PT Aplikanusa Lintasarta -->
+          <div class="relative pl-8 md:pl-10 group">
+            
+            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-darkbg-900 border-2 border-slate-700 flex items-center justify-center text-slate-400 group-hover:scale-110 group-hover:border-blue-500 group-hover:text-blue-400 transition-all shadow-lg">
+              <i data-lucide="headphones" class="w-4 h-4"></i>
+            </div>
+
+            <div class="p-6 sm:p-7 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-slate-700 transition-colors card-print">
+              
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+                  2018 — 2022 (4 Years)
+                </span>
+                <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Jakarta, Indonesia
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white">Service Desk Supervisor & Service Management Analyst</h3>
+              <h4 class="text-base font-semibold text-slate-300 mb-4">PT Aplikanusa Lintasarta</h4>
+
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Managed service desk operations, monitored enterprise SLA commitments, and led Problem Management initiatives across mission-critical telecommunications and IT services.
+              </p>
+
+              <div class="space-y-2 text-sm text-slate-300">
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Directly supervised and mentored a team of 8 Service Desk Analysts, maintaining exceptional client satisfaction and strict SLA adherence.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Spearheaded Problem Management by performing thorough Root Cause Analysis (RCA) on unresolved and recurring incidents, preventing repeat outages.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Formulated and monitored core Service Desk KPIs (First Contact Resolution, Mean Time to Detect, MTTR) to systematically drive support performance.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Maintained and refined IT service management tooling (ServiceDesk Plus), optimizing incident, request, and change management workflows.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Conducted regular ITIL process assessments, internal audits, and delivered structured operational training programs.</span>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-2 pt-5 mt-4 border-t border-slate-700/60">
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Team Leadership (8 Analysts)</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Root Cause Analysis (RCA)</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">ServiceDesk Plus</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">ITIL Process Audits</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Experience 3: PT Swadharma Duta Data -->
+          <div class="relative pl-8 md:pl-10 group">
+            
+            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-darkbg-900 border-2 border-slate-700 flex items-center justify-center text-slate-400 group-hover:scale-110 group-hover:border-blue-500 group-hover:text-blue-400 transition-all shadow-lg">
+              <i data-lucide="server" class="w-4 h-4"></i>
+            </div>
+
+            <div class="p-6 sm:p-7 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-slate-700 transition-colors card-print">
+              
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+                  2017 — 2018 (1 Year)
+                </span>
+                <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Jakarta, Indonesia
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white">Network Operation Center (NOC) Support Analyst</h3>
+              <h4 class="text-base font-semibold text-slate-300 mb-4">PT Swadharma Duta Data</h4>
+
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Provided 24/7 Tier-1 technical monitoring and incident management for high-availability banking and financial transaction networks.
+              </p>
+
+              <div class="space-y-2 text-sm text-slate-300">
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Provided first-level support, resolving incidents and service requests within strict contractual banking SLAs.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Collaborated closely with infrastructure and network engineering teams for expedited incident escalation and root-cause identification.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span>Authored and updated standard resolution procedures within the central knowledge repository.</span>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-2 pt-5 mt-4 border-t border-slate-700/60">
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Banking NOC</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Network Monitoring</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">SLA Tracking</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================== -->
+    <!-- 5. CASE STUDIES & PORTFOLIO SHOWCASE                                  -->
+    <!-- ===================================================================== -->
+    <section id="projects" class="py-20 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div class="space-y-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+              Case Studies & Solutions
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+              Featured Enterprise Projects
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base max-w-2xl">
+              Real-world architectural solutions delivering tangible business outcomes, SLA acceleration, and infrastructure modernization.
+            </p>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="filter-buttons flex flex-wrap gap-2 p-1.5 rounded-2xl bg-darkbg-800 border border-slate-800 text-xs font-medium">
+            <button class="filter-btn px-4 py-2 rounded-xl bg-blue-600 text-white shadow-md transition-all" data-filter="all">All Projects</button>
+            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="itsm">ITSM & JSM</button>
+            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="cloud">Cloud Migration</button>
+            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="ai">AI & Automation</button>
+            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="asset">Assets / CMDB</button>
+          </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Project Card: 345k+ Ticket Migration: Salesforce to JSM Cloud -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-blue-500/50 transition-all glow-card" data-category="itsm cloud">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                  ITSM Transformation
+                </span>
+                <span class="text-xs text-slate-400">Regional Tech Decacorn</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                345k+ Ticket Migration: Salesforce to JSM Cloud
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Transformed 345,000+ support tickets, multi-directorate workflows, and 205 legacy forms into 47 dynamic JSM forms with Slack & Enterprise Datahub integration.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Zero data loss migration across 345k+ records; 75% form catalog rationalization</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Salesforce Migration</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Slack ChatOps</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Datahub ETL</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 hover:border-blue-600 transition-all flex items-center justify-center gap-2" data-project="superapp-salesforce-migration">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Enterprise Jira Server to Cloud & ScriptRunner Modernization -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-sky-500/50 transition-all glow-card" data-category="cloud itsm">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                  Cloud Modernization
+                </span>
+                <span class="text-xs text-slate-400">Mobility & Fintech Decacorn</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Enterprise Jira Server to Cloud & ScriptRunner Modernization
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Executed zero-downtime migration of massive on-premise Jira & Confluence Server environments to Atlassian Cloud Enterprise with 50 man-days of ScriptRunner modernization.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Zero data loss weekend cutover; retired vulnerable on-premise server stack</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Cloud Enterprise</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">ScriptRunner Cloud</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Atlassian Guard SSO</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">qTest</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-sky-600/10 hover:bg-sky-600 text-sky-400 hover:text-white border border-sky-500/30 hover:border-sky-600 transition-all flex items-center justify-center gap-2" data-project="superapp-cloud-modernization">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Service Portal Refactoring, SLA Matrix & ScriptRunner PII Engine -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-indigo-500/50 transition-all glow-card" data-category="itsm ai">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                  Enterprise ITSM & PII
+                </span>
+                <span class="text-xs text-slate-400">National Microfinance BUMN</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Service Portal Refactoring, SLA Matrix & ScriptRunner PII Engine
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Decomposed monolithic enterprise service portal into modular service domains, engineered real-time PII data masking engine, and hardened Atlassian Admin Hub governance.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ 100% statutory PII data privacy compliance; automated domain housekeeping</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Jira Service Management</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">ScriptRunner PII Engine</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Admin Hub</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SLA Matrix</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-indigo-600/10 hover:bg-indigo-600 text-indigo-400 hover:text-white border border-indigo-500/30 hover:border-indigo-600 transition-all flex items-center justify-center gap-2" data-project="microfinance-itsm-pii">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB) -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all glow-card" data-category="itsm asset">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  Hyperscale Infrastructure
+                </span>
+                <span class="text-xs text-slate-400">Pan-Asian Data Centers</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB)
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Full ITIL 4 Service Management and JSM Assets (CMDB) architecture for Tier-3/Tier-4 hyperscale facilities, linking EUC, servers, and network topology to CAB change control.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Automated change collision prevention across 99.999% uptime infrastructure</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets (CMDB)</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">CAB Change Control</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Hardware Schemas</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 hover:border-emerald-600 transition-all flex items-center justify-center gap-2" data-project="datacenter-mission-critical-itsm">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-amber-500/50 transition-all glow-card" data-category="itsm asset">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                  Core Banking ITSM
+                </span>
+                <span class="text-xs text-slate-400">Leading Commercial Bank</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Unified 5 fragmented banking ticketing silos into an integrated JSM ecosystem with automated SAP S/4HANA employee master data synchronization and audit-ready CCB governance.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ 100% audit-ready banking compliance; unified 5 disparate operational silos</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Enterprise</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SAP S/4HANA Integration</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">CCB Approvals</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-amber-600/10 hover:bg-amber-600 text-amber-400 hover:text-white border border-amber-500/30 hover:border-amber-600 transition-all flex items-center justify-center gap-2" data-project="commercial-banking-itsm">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Unified ITSM/CMDB Architecture & Multi-System ITOM Integration -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-purple-500/50 transition-all glow-card" data-category="itsm asset">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                  Broadcasting & ITOM
+                </span>
+                <span class="text-xs text-slate-400">National Broadcaster</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Unified ITSM/CMDB Architecture & Multi-System ITOM Integration
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Enterprise ITSM and living CMDB platform interconnecting JSM Cloud with SAP Solution Manager, SAP Signavio, Microsoft Intune, and HCL BigFix for automated endpoint sync.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Single-pane CMDB bridging broadcast technology and enterprise IT assets</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets (CMDB)</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Microsoft Intune</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">HCL BigFix</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SAP SolMan</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-purple-600/10 hover:bg-purple-600 text-purple-400 hover:text-white border border-purple-500/30 hover:border-purple-600 transition-all flex items-center justify-center gap-2" data-project="broadcasting-media-itsm">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-blue-500/50 transition-all glow-card" data-category="itsm asset">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                  Multi-Tenant Industry
+                </span>
+                <span class="text-xs text-slate-400">Petrochemical Group (ID/SG)</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Dual-tenant Atlassian Cloud architecture across Indonesian chemical manufacturing facilities and Singapore regional HQ, featuring 5 Asset schemas and live SAP SuccessFactors sync.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Automated HR reporting hierarchy; standardized dual-country operations</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud Premium</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SAP SuccessFactors</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Multi-Tenant</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 hover:border-blue-600 transition-all flex items-center justify-center gap-2" data-project="petrochemical-multitenant-itsm">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all glow-card" data-category="itsm asset">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  Automotive & ITAM
+                </span>
+                <span class="text-xs text-slate-400">Regional Automotive Giant</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Replaced legacy ITSM with Freshservice Enterprise + Freddy AI Copilot, backed by an on-premise Device42 auto-discovery grid (Main Appliance, WDS, Remote Collectors) probing 4,000+ assets.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Continuous living CMDB for 4k+ assets; ~35% L1 query deflection via AI</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Freshservice Enterprise</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Device42 Auto-Discovery</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Living CMDB</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Freddy AI</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 hover:border-emerald-600 transition-all flex items-center justify-center gap-2" data-project="automotive-freshservice-device42">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-sky-500/50 transition-all glow-card" data-category="itsm cloud">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                  Maritime & SecOps
+                </span>
+                <span class="text-xs text-slate-400">Global Shipping (100+ Ports)</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Phased JSM Cloud Premium rollout across 100+ shipping port agencies with automated Microsoft Sentinel SIEM incident dispatch, Site24x7 monitoring, and Azure DevOps integration.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Instantaneous automated cyber-incident dispatch; unified 100+ port offices</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud Premium</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Microsoft Sentinel SIEM</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Site24x7</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Git Integration</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-sky-600/10 hover:bg-sky-600 text-sky-400 hover:text-white border border-sky-500/30 hover:border-sky-600 transition-all flex items-center justify-center gap-2" data-project="maritime-logistics-secops-itsm">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: High-Assurance Digital Banking ITSM Transformation & MTTR Optimization -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-amber-500/50 transition-all glow-card" data-category="itsm asset">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                  Digital Banking ITSM
+                </span>
+                <span class="text-xs text-slate-400">Regional Investment Bank</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                High-Assurance Digital Banking ITSM Transformation & MTTR Optimization
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Modernized banking service desk operations with automated P1/P2 alerting matrices, JSM Assets infrastructure dependency mapping, and Confluence self-service deflection.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Slashed banking MTTR; 100% compliance with financial regulatory audits</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Enterprise</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets (CMDB)</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Strict Financial SLAs</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Confluence KB</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-amber-600/10 hover:bg-amber-600 text-amber-400 hover:text-white border border-amber-500/30 hover:border-amber-600 transition-all flex items-center justify-center gap-2" data-project="digital-banking-itsm">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-indigo-500/50 transition-all glow-card" data-category="itsm">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                  Manufacturing ITSM
+                </span>
+                <span class="text-xs text-slate-400">Multinational Agri-Food</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Standardized IT service operations across international food milling and feed manufacturing plants with multi-calendar SLAs, hierarchical authorization, and automated PIR.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Retired manual email ticketing; zero SLA calculation disputes across plants</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Multi-Calendar SLAs</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Manufacturing ITSM</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Problem PIR</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-indigo-600/10 hover:bg-indigo-600 text-indigo-400 hover:text-white border border-indigo-500/30 hover:border-indigo-600 transition-all flex items-center justify-center gap-2" data-project="agri-food-manufacturing-itsm">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: JIRA AI Administrator & Autonomous Incident Triaging Engine -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-purple-500/50 transition-all glow-card" data-category="ai itsm">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                  AI Edge Automation
+                </span>
+                <span class="text-xs text-slate-400">Cloudflare Edge Workers</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                JIRA AI Administrator & Autonomous Incident Triaging Engine
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Serverless edge worker orchestrating Large Language Models to triage incoming tickets, infer categories, and synthesize instant Root Cause Analysis hypotheses.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ ~65% reduction in manual Tier-1 triage overhead; zero server maintenance</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Cloudflare Workers</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">LLM Prompt Pipelines</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Jira REST APIs</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">TypeScript</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-purple-600/10 hover:bg-purple-600 text-purple-400 hover:text-white border border-purple-500/30 hover:border-purple-600 transition-all flex items-center justify-center gap-2" data-project="jira-ai-admin">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Card: Cloud-Native Atlassian Forge Apps & Enterprise Extension Plugins -->
+          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all glow-card" data-category="ai cloud">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  Platform Engineering
+                </span>
+                <span class="text-xs text-slate-400">Atlassian Forge Suite</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Cloud-Native Atlassian Forge Apps & Enterprise Extension Plugins
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Building serverless Atlassian Forge micro-applications with custom UI kits, secure web triggers, and backend resolvers inside Atlassian Cloud compute environment.
+              </p>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
+                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
+                <div class="text-emerald-400 font-medium">★ Zero external hosting footprint; eliminated third-party middleware fees</div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Atlassian Forge</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Forge UI Kit</span>
+                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Cloud Security</span>
+              </div>
+              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 hover:border-emerald-600 transition-all flex items-center justify-center gap-2" data-project="forge-plugins">
+                <span>View Architecture Case Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================== -->
+    <!-- 6. CERTIFICATIONS & EDUCATION                                         -->
+    <!-- ===================================================================== -->
+    <section id="certifications" class="py-20 bg-darkbg-800/40 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+            Verified Credentials
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+            Certifications & Education
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Recognized international certifications in IT Service Management along with formal computer science education.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Cert 1: ITIL 4 Specialist CDS -->
+          <div class="p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-amber-500/50 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 inline-block mb-3">
+              Advanced Specialist
+            </span>
+            <h3 class="text-lg font-bold text-white mb-1">ITIL® 4 Specialist</h3>
+            <h4 class="text-sm font-semibold text-amber-400 mb-3">Create, Deliver and Support (CDS)</h4>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Issued by PeopleCert / AXELOS. Certified expertise in value streams, service integration, operational workflows, and continuous improvement.
+            </p>
+          </div>
+
+          <!-- Cert 2: ITIL 4 Foundation -->
+          <div class="p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-blue-500/50 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 inline-block mb-3">
+              Foundation
+            </span>
+            <h3 class="text-lg font-bold text-white mb-1">ITIL® 4 Foundation</h3>
+            <h4 class="text-sm font-semibold text-blue-400 mb-3">IT Service Management</h4>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Issued by PeopleCert / AXELOS. Mastered four dimensions of service management, service value system (SVS), and 34 management practices.
+            </p>
+          </div>
+
+          <!-- Education: Universitas Mercu Buana -->
+          <div class="p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all group glow-card">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 inline-block mb-3">
+              Bachelor Degree (S1)
+            </span>
+            <h3 class="text-lg font-bold text-white mb-1">Universitas Mercu Buana</h3>
+            <h4 class="text-sm font-semibold text-emerald-400 mb-3">S1 Teknik Informatika (2016 — 2021)</h4>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Graduated with GPA <strong class="text-white">3.23 / 4.00</strong>. Solid foundation in software engineering, database management, computer networks, and systems analysis.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================== -->
+    <!-- 7. CONTACT & CALL TO ACTION                                           -->
+    <!-- ===================================================================== -->
+    <section id="contact" class="py-20 border-t border-slate-800 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-3xl p-8 sm:p-12 lg:p-16 bg-gradient-to-tr from-darkbg-800 via-darkbg-800 to-blue-950/40 border border-slate-800 relative overflow-hidden">
+          
+          <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative">
+            
+            <div class="lg:col-span-7 space-y-6">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+                Let's Collaborate
+              </span>
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                Ready to optimize your Enterprise ITSM ecosystem?
+              </h2>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Whether you're planning an <strong class="text-white">Atlassian Cloud Migration</strong>, looking for a <strong class="text-white">Senior ITSM Solutions Consultant</strong>, or structuring your ITIL 4 service desk operations, let's discuss how we can drive results together.
+              </p>
+
+              <div class="space-y-3 pt-2 text-sm">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block">Direct Email</span>
+                    <a href="mailto:adityafauziyanto@gmail.com" class="text-white font-semibold hover:text-blue-400 transition-colors">
+                      adityafauziyanto@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block">WhatsApp & Phone</span>
+                    <a href="https://wa.me/6285155333480" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-emerald-400 transition-colors">
+                      +62 851 5533 3480
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block">LinkedIn Profile</span>
+                    <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-sky-400 transition-colors">
+                      linkedin.com/in/adityafauzii
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 flex flex-col gap-3.5">
+              <a href="https://wa.me/6285155333480?text=Halo%20Mas%20Aditya%2C%20saya%20melihat%20portfolio%20web%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl font-bold text-sm bg-emerald-600 hover:bg-emerald-500 text-white shadow-xl shadow-emerald-600/25 transition-all text-center flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Direct Chat on WhatsApp</span>
+              </a>
+
+              <a href="mailto:adityafauziyanto@gmail.com?subject=ITSM%20Consulting%20%2F%20Career%20Opportunity%20-%20Aditya%20Fauziyanto" class="w-full py-4 rounded-xl font-bold text-sm bg-blue-600 hover:bg-blue-500 text-white shadow-xl shadow-blue-600/25 transition-all text-center flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
+                <i data-lucide="send" class="w-5 h-5"></i>
+                <span>Send Professional Inquiry</span>
+              </a>
+
+              <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="w-full py-3.5 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all text-center flex items-center justify-center gap-2">
+                <i data-lucide="download" class="w-4 h-4"></i>
+                <span>Download Official CV (PDF)</span>
+              </a>
+
+              <button onclick="window.printCV()" class="w-full py-3 rounded-xl font-medium text-xs bg-slate-900/60 hover:bg-slate-900 text-slate-400 hover:text-white border border-slate-800 transition-all flex items-center justify-center gap-2">
+                <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+                <span>Print ATS-Friendly Format</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-darkbg-900 py-10 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div>
+        © 2026 Aditya Fauziyanto. Senior ITSM Consultant & Atlassian Solutions Architect.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#hero" class="hover:text-slate-400 transition-colors">Back to top ↑</a>
+        <span>•</span>
+        <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">LinkedIn</a>
+        <span>•</span>
+        <a href="mailto:adityafauziyanto@gmail.com" class="hover:text-blue-400 transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ===================================================================== -->
+  <!-- CASE STUDY DETAIL MODAL                                               -->
+  <!-- ===================================================================== -->
+  <div id="project-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md overflow-y-auto no-print">
+    <div class="modal-content relative w-full max-w-3xl my-8 rounded-3xl bg-darkbg-800 border border-slate-700 shadow-2xl p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Modal Close Button -->
+      <button id="modal-close-btn" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors" aria-label="Close Modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="space-y-2 pr-10">
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <span id="modal-client" class="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 font-semibold border border-blue-500/20">Client</span>
+          <span class="text-slate-500">•</span>
+          <span id="modal-role" class="text-slate-400">Architect</span>
+          <span class="text-slate-500">•</span>
+          <span id="modal-timeline" class="text-slate-500">Timeline</span>
+        </div>
+        <h3 id="modal-title" class="text-2xl font-bold text-white leading-tight">Project Title</h3>
+        <p id="modal-summary" class="text-slate-300 text-sm leading-relaxed">Project summary...</p>
+      </div>
+
+      <!-- Problem / Challenge Section -->
+      <div class="p-4 rounded-2xl bg-rose-500/5 border border-rose-500/20 space-y-2">
+        <div class="flex items-center gap-2 text-rose-400 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+          <span>The Business Challenge</span>
+        </div>
+        <ul id="modal-challenges" class="space-y-1.5 pl-1">
+          <!-- Populated dynamically via script.js -->
+        </ul>
+      </div>
+
+      <!-- Architectural Solution Section -->
+      <div class="p-4 rounded-2xl bg-blue-500/5 border border-blue-500/20 space-y-2">
+        <div class="flex items-center gap-2 text-blue-400 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="check-circle" class="w-4 h-4"></i>
+          <span>Architectural Solution & Implementation</span>
+        </div>
+        <ul id="modal-solutions" class="space-y-1.5 pl-1">
+          <!-- Populated dynamically via script.js -->
+        </ul>
+      </div>
+
+      <!-- Measurable Business Impact Section -->
+      <div class="p-4 rounded-2xl bg-emerald-500/5 border border-emerald-500/20 space-y-2">
+        <div class="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="trending-up" class="w-4 h-4"></i>
+          <span>Measurable Impact & Results</span>
+        </div>
+        <ul id="modal-impacts" class="space-y-1.5 pl-1">
+          <!-- Populated dynamically via script.js -->
+        </ul>
+      </div>
+
+      <!-- Tech Stack Tags -->
+      <div class="space-y-2 pt-2 border-t border-slate-700/60">
+        <span class="text-xs font-semibold text-slate-400 block">Technologies & Frameworks Utilized:</span>
+        <div id="modal-tags" class="flex flex-wrap gap-2">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ===================================================================== -->
+  <!-- TOAST NOTIFICATION POPUP                                              -->
+  <!-- ===================================================================== -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 rounded-2xl bg-slate-800 border border-slate-700 text-white shadow-2xl text-xs font-medium no-print">
+    <div class="w-6 h-6 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center">
+      <i data-lucide="check" class="w-3.5 h-3.5"></i>
+    </div>
+    <span id="toast-msg">Text copied to clipboard</span>
+  </div>
+
+
+  <!-- Custom JS Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

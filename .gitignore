@@ -13,3 +13,8 @@ desktop.ini
 
 # Local Node / Package Cache
 node_modules/
+
+# Local Server Logs
+*.log
+server.log
+

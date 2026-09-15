@@ -12,8 +12,8 @@
 | Atribut | Detail |
 |---|---|
 | **Nama Lengkap** | Aditya Fauziyanto |
-| **Current Role** | Senior ITSM Consultant & Atlassian Solutions Architect |
-| **Spesialisasi** | Jira Service Management (JSM), Atlassian Cloud Migration, JSM Assets (CMDB), ITIL® 4 Framework & Governance, Pre-sales Solutioning, Edge/Forge Automation |
+| **Current Role** | Presales Solutions Architect & Enterprise ITSM Architect |
+| **Spesialisasi** | Technical Presales & RFP Defense, Enterprise ITSM Architecture, Service Governance & Compliance, Jira Service Management (JSM), Atlassian Cloud Migration, JSM Assets (CMDB), Edge/Forge Automation |
 | **Lokasi** | Cikarang Utara, Bekasi / Jabodetabek, Indonesia |
 | **Email** | `adityafauziyanto@gmail.com` |
 | **No. HP / WhatsApp** | `+62 851 5533 3480` |
@@ -26,11 +26,11 @@
 ## 2. Ringkasan Jejak Karier (Work Experience)
 
 1. **PT iZeno Teknologi Indonesia** (2022 — Sekarang)
-   - *Role:* Senior ITSM Consultant & Solutions Architect
-   - *Fokus:* Cloud migration enterprise (Jira Server/DC ke Atlassian Cloud Enterprise), arsitektur JSM kustom, JSM Assets (CMDB) data modeling, pre-sales proposals (SOW, man-day sizing, GAP analysis), ITIL 4 KPI & workflow design.
+   - *Role:* Senior ITSM Consultant & Presales Solutions Architect
+   - *Fokus:* Technical presales solutioning (executive discovery, RFP/RFI responses, SOW man-day sizing, proposal defense), enterprise ITSM architecture (JSM Cloud/DC), Atlassian Cloud Migration (JCMA, ScriptRunner modernization), JSM Assets (CMDB) data modeling, dan Enterprise Service Governance.
 2. **PT Aplikanusa Lintasarta** (2018 — 2022 | 4 Tahun)
    - *Role:* Service Desk Supervisor & Service Management Analyst
-   - *Fokus:* Supervisi tim 8 analis Service Desk 24/7, Problem Management & Root Cause Analysis (RCA), penyusunan KPI & SLA, audit kepatuhan ITIL, konfigurasi ServiceDesk Plus.
+   - *Fokus:* Supervisi tim 8 analis Service Desk 24/7, Problem Management & Root Cause Analysis (RCA), Service Governance, penyusunan KPI & SLA, audit kepatuhan operasional, konfigurasi ServiceDesk Plus.
 3. **PT Swadharma Duta Data** (2017 — 2018 | 1 Tahun)
    - *Role:* Network Operation Center (NOC) Support Analyst for Banking
    - *Fokus:* Pemantauan infrastruktur perbankan L1, penanganan insiden sesuai SLA ketat, eskalasi teknis, dan dokumentasi SOP/knowledge base.
@@ -51,19 +51,19 @@
 
 ## 4. Struktur Data Portofolio di `script.js` & `index.html` (13 Real Case Studies)
 
-Seluruh 11 kick-off deck enterprise riil di folder `Portofolio/` ditambah 2 inovasi arsitektur pribadi telah berhasil dibedah, di-anonymize sesuai ketentuan ketat **NDA (Non-Disclosure Agreement)**, dan dipetakan dengan peran lo sebagai **Lead ITSM Architect / Atlassian Solutions Architect**:
+Seluruh 11 kick-off deck enterprise riil di folder `Portofolio/` ditambah 2 inovasi arsitektur pribadi telah dibedah, di-anonymize sesuai ketentuan ketat **NDA (Non-Disclosure Agreement)**, dan dipetakan dengan peran sebagai **Presales Solutions Architect & Enterprise ITSM Architect** (100% deal-to-delivery track record: seluruh proyek dimenangkan lewat presales discovery, sizing, dan proposal defense yang dipimpin langsung oleh Aditya):
 
-1. `superapp-salesforce-migration`: **345k+ Ticket Migration: Salesforce Service Cloud to JSM Cloud** (Southeast Asian Decacorn Superapp & Tech Ecosystem) — Datahub ETL, 205 legacy forms dipangkas ke 47 JSM forms, Slack ChatOps, PAC onboarding.
-2. `superapp-cloud-modernization`: **Enterprise Jira Server to Cloud Migration & ScriptRunner Modernization** (Leading Regional Superapp & Mobility-Fintech Decacorn) — 50 man-days ScriptRunner Cloud Groovy-to-REST refactoring, qTest, zero-downtime cutover.
-3. `microfinance-itsm-pii`: **Enterprise Service Portal Refactoring, SLA Matrix & ScriptRunner PII Engine** (National State-Owned Microfinance & Financial Enterprise BUMN) — Refactoring arsitektur portal monolitik, mitigasi UU PDP via 5 ScriptRunner PII masking scripts, Admin Hub governance.
-4. `datacenter-mission-critical-itsm`: **Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB)** (Pan-Asian Hyperscale Tier-3 & Tier-4 Data Center Operator) — ITIL 4 Service Desk, EUC/Server/Network schema di JSM Assets, CAB change collision gating, procurement workflows.
-5. `commercial-banking-itsm`: **Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration** (Leading Commercial & Digital Banking Institution) — Penyatuan 5 silo ticketing, otomatisasi pipeline master data karyawan SAP S/4HANA ke JSM Assets, kepatuhan audit perbankan & CCB.
-6. `broadcasting-media-itsm`: **Unified ITSM/CMDB Architecture & Multi-System ITOM Integration** (Singapore's National Media Network & Broadcasting Conglomerate) — Sinkronisasi JSM Assets dengan Microsoft Intune & HCL BigFix, integrasi proses SAP Solution Manager & SAP Signavio, Atlassian Guard SSO.
-7. `petrochemical-multitenant-itsm`: **Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration** (Leading Southeast Asian Petrochemical & Energy Group - Dual Entity ID/SG) — Arsitektur multi-tenant, 5 Asset schemas, integrasi OnLink SAP SuccessFactors, koordinasi MSP global.
-8. `automotive-freshservice-device42`: **Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery** (Regional Automotive Distribution & Luxury Mobility Giant) — Freshservice Enterprise + Freddy AI Copilot, on-premise Device42 grid (Main Appliance, WDS, Remote Collectors) memetakan 4.000+ aset real-time.
-9. `maritime-logistics-secops-itsm`: **Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration** (Global Maritime & Shipping Logistics Corporation - 100+ Ports) — JSM Cloud Premium, integrasi connector SecOps SIEM Microsoft Sentinel, Site24x7, Intune, Git Integration for Jira.
-10. `digital-banking-itsm`: **High-Assurance Digital Banking ITSM Transformation & MTTR Optimization** (Regional Investment & Digital Banking Corporation) — High-assurance banking ITSM, pemetaan dependency core banking di JSM Assets, eskalasi otomatis P1/P2, defleksi Confluence KB.
-11. `agri-food-manufacturing-itsm`: **Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization** (Multinational Agri-Business & Food Manufacturing Enterprise) — Multi-calendar SLAs berbasis shift pabrik & hari libur daerah, approval hierarkis, otomatisasi Post-Incident Review (PIR).
+1. `superapp-salesforce-migration`: **345k+ Ticket Migration: Salesforce Service Cloud to JSM Cloud** (Southeast Asian Decacorn Superapp & Tech Ecosystem) — Presales scoping TCO, Datahub ETL, 205 legacy forms dipangkas ke 47 JSM forms, Slack ChatOps, zero data loss.
+2. `superapp-cloud-modernization`: **Enterprise Jira Server to Cloud Migration & ScriptRunner Modernization** (Leading Regional Superapp & Mobility-Fintech Decacorn) — Presales cutover roadmap defense ke C-level, 50 man-days ScriptRunner Cloud Groovy-to-REST refactoring, zero-downtime cutover.
+3. `microfinance-itsm-pii`: **Enterprise Service Portal Refactoring, SLA Matrix & ScriptRunner PII Engine** (National State-Owned Microfinance & Financial Enterprise BUMN) — Proposal teknis kepatuhan UU PDP & data privacy governance, 5 ScriptRunner PII masking scripts, Admin Hub governance.
+4. `datacenter-mission-critical-itsm`: **Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB)** (Pan-Asian Hyperscale Tier-3 & Tier-4 Data Center Operator) — Menang tender internasional via defense blast-radius dependency CMDB, EUC/Server/Network schema, CAB change governance 99.999% uptime.
+5. `commercial-banking-itsm`: **Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration** (Leading Commercial & Digital Banking Institution) — Discovery presales perbankan, integrasi master data SAP S/4HANA ke JSM Assets, CCB governance & kepatuhan audit bank sentral.
+6. `broadcasting-media-itsm`: **Unified ITSM/CMDB Architecture & Multi-System ITOM Integration** (National Media Network & Broadcasting Conglomerate) — Arsitektur solusi presales mengintegrasikan broadcast ITOM (HCL BigFix, Intune) dengan JSM & SAP SolMan, live broadcast change control.
+7. `petrochemical-multitenant-itsm`: **Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration** (Leading Southeast Asian Petrochemical & Energy Group) — Perancangan arsitektur multi-tenant cross-border (ID/SG) saat presales workshop, 5 Asset schemas, OnLink SAP SuccessFactors sync.
+8. `automotive-freshservice-device42`: **Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery** (Regional Automotive Distribution & Luxury Mobility Giant) — Menang tender via live discovery POC Freshservice + on-premise Device42 grid memetakan 4.000+ aset real-time.
+9. `maritime-logistics-secops-itsm`: **Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration** (Global Maritime & Shipping Logistics Corporation - 100+ Ports) — Defense proposal teknis integrasi SecOps SIEM Sentinel ke JSM Cloud Premium di 100+ kantor cabang pelabuhan global.
+10. `digital-banking-itsm`: **High-Assurance Digital Banking ITSM Transformation & MTTR Optimization** (Regional Investment & Digital Banking Corporation) — Menang mandat digital banking via blueprint SLA governance & CCB audit trail bergaransi percepatan MTTR & FCR.
+11. `agri-food-manufacturing-itsm`: **Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization** (Multinational Agri-Business & Food Manufacturing Enterprise) — Workshop discovery di pabrik & mill, scoping arsitektur multi-calendar SLA mengeliminasi friksi pelaporan.
 12. `jira-ai-admin`: **JIRA AI Administrator & Autonomous Incident Triaging Engine** (AI & Cloudflare Edge Innovation) — Edge workers serverless, otomatisasi klasifikasi tiket & sintesis hipotesis Root Cause Analysis (RCA) via LLM.
 13. `forge-plugins`: **Cloud-Native Atlassian Forge Apps & Enterprise Plugins** (Atlassian Platform Engineering) — Aplikasi cloud-native serverless di atas runtime Atlassian Forge, custom UI Kit, event triggers, zero external hosting footprint.
 

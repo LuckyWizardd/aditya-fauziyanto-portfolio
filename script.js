@@ -1,6 +1,6 @@
 /**
  * Interactive Script for Aditya Fauziyanto Portfolio & CV
- * Senior ITSM Consultant & Atlassian Solutions Architect
+ * Presales Solutions Architect & Enterprise ITSM Architect
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -126,10 +126,11 @@ const caseStudies = {
   "superapp-salesforce-migration": {
     "title": "345,000+ Ticket Migration: Salesforce Service Cloud to JSM Cloud",
     "client": "Southeast Asian Decacorn Superapp & Tech Ecosystem",
-    "role": "Lead ITSM Architect & Data Migration Specialist",
+    "role": "Presales Solutions Architect & Migration Lead",
     "timeline": "Multi-Quarter Enterprise Cutover",
     "category": "ITSM Modernization & Cloud Migration",
     "badgeColor": "blue",
+    "presalesScope": "Led the competitive presales discovery against legacy incumbent tools, quantified total cost of ownership (TCO) savings, and authored the comprehensive SOW with phased man-day sizing that won the multi-quarter enterprise contract.",
     "summary": "Spearheaded the massive transformation and migration of 345,000+ historical support tickets, cross-functional business units, and multi-department workflows from Salesforce Service Cloud to Jira Service Management Cloud.",
     "challenge": [
       "Disparate departmental silos across IT Finance, Workplace Management, Corporate Affairs, and People Operations running fragmented ticketing tools.",
@@ -160,10 +161,11 @@ const caseStudies = {
   "superapp-cloud-modernization": {
     "title": "Enterprise Jira Server to Cloud Migration & ScriptRunner Modernization",
     "client": "Leading Regional Superapp & Mobility-Fintech Decacorn",
-    "role": "Enterprise Solutions Architect & Migration Lead",
+    "role": "Presales Solutions Architect & Cloud Modernization Lead",
     "timeline": "Strategic Cloud Cutover",
     "category": "Cloud Architecture & Governance",
     "badgeColor": "sky",
+    "presalesScope": "Conducted deep-dive technical discovery and pre-sales architecture defense before C-level leadership, presenting the multi-stage migration strategy and ScriptRunner cloud modernization roadmap that secured project authorization.",
     "summary": "Architected the zero-downtime migration of massive on-premise Jira Software & Confluence Server instances from private cloud infrastructure to Atlassian Cloud Enterprise.",
     "challenge": [
       "Heavy enterprise reliance on legacy on-premise Jira Server and Confluence instances with hundreds of customized workflows, custom fields, and complex permission schemes.",
@@ -194,10 +196,11 @@ const caseStudies = {
   "microfinance-itsm-pii": {
     "title": "Enterprise Service Portal Refactoring, SLA Matrix & PII Masking Engine",
     "client": "National State-Owned Microfinance & Financial Enterprise (BUMN)",
-    "role": "Lead ITSM Architect & Atlassian Platform Engineer",
-    "timeline": "Enterprise Enhancement & Hardening (Jan \u2013 Jul 2026)",
+    "role": "Presales Solutions Architect & Enterprise Platform Engineer",
+    "timeline": "Enterprise Enhancement & Hardening (Jan – Jul 2026)",
     "category": "Enterprise ITSM & Data Privacy",
     "badgeColor": "indigo",
+    "presalesScope": "Spearheaded the technical proposal and regulatory governance alignment addressing statutory Indonesian personal data protection (UU PDP), designing the automated PII masking blueprint that won the state-owned enterprise mandate.",
     "summary": "Overhauled the national microfinance institution flagship internal service portal, refactoring monolithic architectures, optimizing multi-tiered SLAs, and engineering an automated ScriptRunner PII masking engine.",
     "challenge": [
       "The existing internal enterprise service portal suffered from monolithic project bloat, convoluted request forms, and poor SLA compliance across thousands of nationwide branch offices.",
@@ -228,10 +231,11 @@ const caseStudies = {
   "datacenter-mission-critical-itsm": {
     "title": "Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB)",
     "client": "Pan-Asian Hyperscale Tier-3 & Tier-4 Data Center Operator",
-    "role": "Lead Solutions Architect & CMDB Designer",
+    "role": "Presales Solutions Architect & Living CMDB Designer",
     "timeline": "Full Lifecycle Implementation & UAT",
     "category": "Asset Management & Mission-Critical ITSM",
     "badgeColor": "emerald",
+    "presalesScope": "Won the competitive international tender by defending an enterprise architecture that mapped physical data center infrastructure (racks, servers, switches) directly to CAB change risk scoring for 99.999% uptime facilities.",
     "summary": "Designed an enterprise IT Service Management and IT Asset Management (CMDB) architecture for a premier hyperscale data center provider operating mission-critical facilities across the Asia-Pacific.",
     "challenge": [
       "Operating hyperscale data centers supporting global tech giants requires 99.999% uptime, zero tolerance for uncoordinated changes, and rigorous audit trails.",
@@ -239,7 +243,7 @@ const caseStudies = {
       "Lack of an authoritative CMDB connecting physical data center assets (racks, servers, switches, EUC) directly to active incident and change tickets."
     ],
     "solution": [
-      "Architected full-spectrum ITIL 4 Service Desk on JSM Cloud SaaS encompassing Incident, Change, Problem, and Procurement Service Management.",
+      "Architected full-spectrum enterprise service governance platform on JSM Cloud SaaS encompassing Incident, Change, Problem, and Procurement Service Management.",
       "Structured comprehensive JSM Assets (CMDB) data models: designed object schemas for End-User Compute (EUC), Physical Servers, and Network Infrastructure.",
       "Linked CMDB configuration items dynamically into Change Request tickets to enable automated blast-radius impact analysis for the Change Advisory Board (CAB).",
       "Formulated rigorous Change Management workflows with multi-stakeholder authorization gates and automated freeze-window alerts.",
@@ -261,10 +265,11 @@ const caseStudies = {
   "commercial-banking-itsm": {
     "title": "Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration",
     "client": "Leading Commercial & Digital Banking Institution",
-    "role": "Lead ITSM Architect & Business Analyst",
+    "role": "Presales Solutions Architect & Banking Governance Lead",
     "timeline": "Enterprise Banking Modernization",
     "category": "Core Banking ITSM & ERP Integration",
     "badgeColor": "amber",
+    "presalesScope": "Led presales discovery sessions and technical proposal modeling, architecting dynamic SAP S/4HANA ERP master data synchronization that solved strict financial regulatory audit compliance.",
     "summary": "Consolidated siloed banking service workflows into a unified Jira Service Management platform integrated with SAP S/4HANA employee master data and audit-ready governance.",
     "challenge": [
       "Bank operated fragmented, isolated workflows across Incident Management, Problem Management, Engineering, Release Deployment, and Change Control Board (CCB) submissions.",
@@ -293,10 +298,11 @@ const caseStudies = {
   "broadcasting-media-itsm": {
     "title": "Unified ITSM/CMDB Architecture & Multi-System ITOM Integration",
     "client": "National Media Network & Broadcasting Conglomerate",
-    "role": "Lead ITSM Architect & Systems Integration Lead",
+    "role": "Presales Solutions Architect & Systems Integration Lead",
     "timeline": "Broadcaster Infrastructure Modernization",
     "category": "Media ITSM & Hybrid ITOM Discovery",
     "badgeColor": "purple",
+    "presalesScope": "Formulated the winning presales solution architecture interconnecting broadcast technology (HCL BigFix, Intune) with SAP Solution Manager, proving seamless change control during high-visibility live broadcasts.",
     "summary": "Delivered an enterprise-grade ITSM and living CMDB solution for the national broadcaster, interconnecting JSM Cloud with SAP SolMan, Signavio, BigFix, and Microsoft Intune.",
     "challenge": [
       "Complex media production, broadcasting infrastructure, and enterprise IT operated in silos across multiple management and monitoring tools.",
@@ -304,7 +310,7 @@ const caseStudies = {
       "Need for seamless process alignment between IT change workflows and enterprise business process modeling in SAP Solution Manager and SAP Signavio."
     ],
     "solution": [
-      "Architected end-to-end ITIL 4 Service Management on JSM Cloud, Confluence, and Atlassian Guard.",
+      "Architected end-to-end enterprise service governance and ITSM platform on JSM Cloud, Confluence, and Atlassian Guard.",
       "Engineered multi-source CMDB synchronization linking JSM Assets with Microsoft Intune and HCL BigFix for continuous automated inventory reconciliation.",
       "Developed bi-directional process integrations interconnecting SAP Solution Manager and SAP Signavio with JSM Change and Release management.",
       "Deployed centralized customer self-service portals with tailored service catalogs for digital newsrooms, broadcast studios, and corporate staff."
@@ -326,10 +332,11 @@ const caseStudies = {
   "petrochemical-multitenant-itsm": {
     "title": "Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration",
     "client": "Leading Southeast Asian Petrochemical & Energy Group",
-    "role": "Lead Solutions Architect & Multi-Tenant Deployment Lead",
+    "role": "Presales Solutions Architect & Multi-Tenant Lead",
     "timeline": "Dual-Entity International Rollout",
     "category": "Multi-Tenant Enterprise ITSM & JSM Assets",
     "badgeColor": "blue",
+    "presalesScope": "Crafted the cross-border dual-entity architecture (Indonesia manufacturing plant + Singapore regional HQ) during pre-sales workshops, overcoming complex multi-currency, data segregation, and SAP SuccessFactors sync challenges.",
     "summary": "Architected and deployed a multi-tenant Atlassian Cloud ITSM and CMDB ecosystem spanning chemical manufacturing plants in Indonesia and international corporate HQ in Singapore.",
     "challenge": [
       "Dual-entity organizational structure requiring synchronized yet segregated ITSM environments for manufacturing plants in Indonesia and commercial operations in Singapore.",
@@ -337,7 +344,7 @@ const caseStudies = {
       "Need to coordinate change management and operational handoffs with external global managed service providers."
     ],
     "solution": [
-      "Designed multi-tenant architecture on JSM Cloud Premium across two distinct sites with standardized ITIL 4 workflows for Request, Incident, Change, and Problem Management.",
+      "Designed multi-tenant architecture on JSM Cloud Premium across two distinct sites with standardized enterprise service governance workflows for Request, Incident, Change, and Problem Management.",
       "Engineered 5 distinct JSM Assets schemas (2 for Indonesian plant facilities, 3 for Singapore regional HQ) modeling plant equipment, corporate IT, and software licenses.",
       "Integrated OnLink connector to synchronize employee identities, department codes, and approval reporting lines dynamically from SAP SuccessFactors into JSM Assets.",
       "Formulated standardized operational handoff protocols and shared escalation paths with global managed service partners.",
@@ -359,10 +366,11 @@ const caseStudies = {
   "automotive-freshservice-device42": {
     "title": "Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery",
     "client": "Regional Automotive Distribution & Luxury Mobility Giant",
-    "role": "Principal ITSM Architect & CMDB Infrastructure Lead",
-    "timeline": "Enterprise Tech Refresh (Aug \u2013 Dec 2026)",
+    "role": "Presales Solutions Architect & CMDB Infrastructure Lead",
+    "timeline": "Enterprise Tech Refresh (Aug – Dec 2026)",
     "category": "IT Asset Management & Living CMDB",
     "badgeColor": "emerald",
+    "presalesScope": "Spearheaded technical RFP response and engineered a live discovery Proof-of-Concept (POC) combining Freshservice with Device42, proving automated inventory tracking across 4,000+ distributed dealership nodes to win the contract.",
     "summary": "Architected a modern ITSM and automated ITAM ecosystem across regional automotive dealerships, integrating Freshservice Enterprise with an on-premise Device42 auto-discovery grid.",
     "challenge": [
       "Legacy on-premise ticketing system lacked real-time visibility into distributed dealership showrooms, service centers, and corporate data centers.",
@@ -392,10 +400,11 @@ const caseStudies = {
   "maritime-logistics-secops-itsm": {
     "title": "Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration",
     "client": "Global Maritime & Shipping Logistics Corporation (100+ Ports)",
-    "role": "Lead ITSM Architect & SecOps Integration Specialist",
+    "role": "Presales Solutions Architect & SecOps Integration Specialist",
     "timeline": "Phased Global Deployment",
     "category": "Global ITSM & SecOps SIEM Integration",
     "badgeColor": "sky",
+    "presalesScope": "Led the technical presales defense demonstrating how automated Microsoft Sentinel SIEM incident dispatch into JSM Cloud Premium would enforce 24/7 global maritime compliance across 100+ port agencies worldwide.",
     "summary": "Led the phased implementation of Jira Service Management Cloud Premium and JSM Assets across 100+ shipping agency offices, integrating with Microsoft Sentinel SIEM for automated SecOps alerting.",
     "challenge": [
       "Global maritime operations spanning 100+ port offices requiring 24/7 continuous support, rigid maritime compliance, and cross-timezone incident escalation.",
@@ -404,7 +413,7 @@ const caseStudies = {
     ],
     "solution": [
       "Deployed Jira Service Management Cloud Premium (50 Agents, 24/7 Global Portal, On-Call Scheduling & Alerting).",
-      "Implemented full ITIL 4 practices: Incident, Service Request, Change, Release, and Problem Management linked to structured JSM Assets schemas (EUC, Servers, Networks).",
+      "Implemented comprehensive enterprise service governance practices: Incident, Service Request, Change, Release, and Problem Management linked to structured JSM Assets schemas (EUC, Servers, Networks).",
       "Engineered custom integration connector linking Microsoft Sentinel (SIEM) with JSM to automatically create, categorize, and assign high-priority security incidents.",
       "Integrated Microsoft Intune for automated device inventory sync, Site24x7 for uptime monitoring, and Microsoft Teams for real-time triage.",
       "Implemented Git Integration for Jira (Azure DevOps, GitHub, GitLab) enabling full DevOps traceability from incident to code deployment."
@@ -426,10 +435,11 @@ const caseStudies = {
   "digital-banking-itsm": {
     "title": "High-Assurance Digital Banking ITSM Transformation & MTTR Optimization",
     "client": "Regional Investment & Digital Banking Corporation",
-    "role": "Lead ITSM Architect & Financial Governance Lead",
+    "role": "Presales Solutions Architect & Financial Governance Lead",
     "timeline": "Full Lifecycle Implementation & Governance",
     "category": "Digital Banking ITSM & Strict SLA Compliance",
     "badgeColor": "amber",
+    "presalesScope": "Won the digital banking mandate by presenting a high-assurance SLA governance blueprint and automated CCB audit trail that guaranteed accelerated MTTR and satisfied central banking regulatory scrutiny.",
     "summary": "Architected a high-assurance IT Service Management and CMDB platform for a premier investment and digital banking institution, accelerating MTTR and First-Call Resolution.",
     "challenge": [
       "Stringent financial regulatory requirements demanding strict adherence to transaction processing SLAs and complete auditability for all IT changes.",
@@ -437,7 +447,7 @@ const caseStudies = {
       "Lack of structured dependency mapping between core banking applications, databases, and underlying virtual server infrastructure."
     ],
     "solution": [
-      "Architected comprehensive ITIL 4 Service Desk encompassing Service Request, Incident, Change, Problem, Knowledge, and Asset Management on JSM.",
+      "Architected comprehensive enterprise service governance platform encompassing Service Request, Incident, Change, Problem, Knowledge, and Asset Management on JSM.",
       "Developed JSM Assets CMDB schema and automated discovery pipelines mapping upstream and downstream dependencies across core banking stacks.",
       "Implemented automated escalation and on-call alerting matrix for priority P1/P2 incidents with strict SLA breach prevention timers.",
       "Configured self-service banking employee portal with integrated Confluence knowledge articles, deflecting repetitive password reset and access entitlement inquiries."
@@ -458,10 +468,11 @@ const caseStudies = {
   "agri-food-manufacturing-itsm": {
     "title": "Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization",
     "client": "Multinational Agri-Business & Food Manufacturing Conglomerate",
-    "role": "Lead ITSM Architect & ITIL Process Consultant",
+    "role": "Presales Solutions Architect & Governance Consultant",
     "timeline": "Phased Enterprise Manufacturing Rollout",
     "category": "Industrial ITSM & Supply Chain Operations",
     "badgeColor": "indigo",
+    "presalesScope": "Conducted comprehensive on-site discovery workshops across regional milling operations, scoping an advanced multi-calendar SLA model that won client stakeholder confidence over competing generic proposals.",
     "summary": "Standardized IT service management across international food manufacturing plants and milling facilities, implementing multi-calendar SLAs and automated Post-Incident Reviews (PIR).",
     "challenge": [
       "Unstandardized support channels across geographically dispersed manufacturing plants, feed mills, and corporate offices relying heavily on uncoordinated emails.",
@@ -469,7 +480,7 @@ const caseStudies = {
       "Frequent recurring equipment and network incidents without systematic Root Cause Analysis or linkage to Problem Management."
     ],
     "solution": [
-      "Formulated structured ITIL 4 workflows for Service Request, Incident, Problem, and Change Management with up to 3 tiers of hierarchical authorization.",
+      "Formulated structured enterprise service governance workflows for Service Request, Incident, Problem, and Change Management with up to 3 tiers of hierarchical authorization.",
       "Designed advanced multi-calendar SLA configurations tailored to individual mill and plant operational hours and regional holiday calendars.",
       "Implemented automated Post-Incident Review (PIR) linkage between major incident closures and newly spawned Problem tickets for root cause remediation.",
       "Built a centralized employee self-service portal backed by 5 standardized Confluence Knowledge Base spaces to deflect routine operational inquiries.",
@@ -491,10 +502,11 @@ const caseStudies = {
   "jira-ai-admin": {
     "title": "JIRA AI Administrator & Autonomous Incident Triaging Engine",
     "client": "AI & Cloudflare Edge Innovation",
-    "role": "Creator & Systems Architect",
+    "role": "Creator & AI Solutions Architect",
     "timeline": "Production Edge Deployment",
     "category": "AI & Serverless Automation",
     "badgeColor": "purple",
+    "presalesScope": "Engineered working architectural prototype to showcase real-time LLM-driven incident triaging and root cause analysis (RCA), validating automated governance before enterprise deployment.",
     "summary": "Serverless edge worker orchestrating Large Language Models to triage, categorize, and provide instant Root Cause Analysis (RCA) on incoming Jira incidents.",
     "challenge": [
       "High volume of Tier-1 incidents causing ticket backlogs and delayed triage by human service desk dispatchers.",
@@ -523,10 +535,11 @@ const caseStudies = {
   "forge-plugins": {
     "title": "Cloud-Native Atlassian Forge Apps & Enterprise Plugins",
     "client": "Atlassian Platform Engineering",
-    "role": "Forge Developer & Solutions Architect",
+    "role": "Atlassian Forge & Solutions Architect",
     "timeline": "Iterative Platform Suite",
     "category": "Custom Forge Development",
     "badgeColor": "emerald",
+    "presalesScope": "Architected custom cloud-native extension suite to solve niche enterprise requirements natively within Atlassian Cloud, eliminating recurring cost and compliance friction of third-party SaaS middleware.",
     "summary": "Building secure cloud-native Forge micro-applications with custom UI kits, web triggers, and backend resolvers to close enterprise requirement gaps.",
     "challenge": [
       "Enterprise business requirements exceeding out-of-the-box Jira Cloud automation capabilities.",
@@ -616,6 +629,12 @@ function initProjectModal() {
       document.getElementById('modal-role').innerText = data.role;
       document.getElementById('modal-timeline').innerText = data.timeline;
       document.getElementById('modal-summary').innerText = data.summary;
+
+      // Presales Strategy Scope
+      const presalesEl = document.getElementById('modal-presales-scope');
+      if (presalesEl && data.presalesScope) {
+        presalesEl.innerText = data.presalesScope;
+      }
 
       // Challenge List
       const challengeList = document.getElementById('modal-challenges');

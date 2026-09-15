@@ -34,6 +34,9 @@
 3. **PT Swadharma Duta Data** (2017 — 2018 | 1 Year)
    - *Role:* Network Operation Center (NOC) Support Analyst for Banking
    - *Fokus:* Pemantauan 24/7 infrastruktur transaksi core banking L1 (ATM switching, jaringan finansial), penanganan insiden sesuai SLA ketat, eskalasi teknis Tier-2, dan standarisasi SOP runbook.
+4. **Sab'a System Solution** (2015 — 2017 | 2 Tahun)
+   - *Role:* Enterprise Network Field Engineer (Vendor Partner for Indosat Ooredoo)
+   - *Fokus:* Instalasi on-site dan commissioning infrastruktur jaringan enterprise (rack-and-stack, router/switch, CPE, cabling patch panel) untuk klien B2B korporat Indosat. Site survey, pengujian loopback physical layer, validasi stabilitas link leased line/MPLS WAN, koordinasi cutover UAT dengan tim klien & NOC Indosat, serta penerbitan BAST. Total jam terbang karier: **10+ Tahun (2015 — 2026)**.
 
 ---
 

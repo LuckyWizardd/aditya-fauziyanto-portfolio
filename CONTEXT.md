@@ -27,13 +27,13 @@
 
 1. **PT iZeno Teknologi Indonesia** (2022 — Sekarang)
    - *Role:* Country Presales & Solutions Architecture Lead – Indonesia
-   - *Fokus:* Country-level practice leadership, technical presales solutioning (executive discovery, RFP/RFI responses, SOW man-day sizing, proposal defense), enterprise ITSM architecture (JSM Cloud/DC), Atlassian Cloud Migration (JCMA, ScriptRunner modernization), JSM Assets (CMDB) data modeling, dan Enterprise Service Governance.
+   - *Fokus:* Country-level practice leadership, technical presales solutioning (executive discovery, RFP/RFI responses, SOW man-day sizing, proposal defense), enterprise ITSM architecture (JSM Cloud/DC), Atlassian Cloud Migration (JCMA, ScriptRunner modernization), JSM Assets (CMDB) data modeling, dan Enterprise Service Governance. Menjembatani presales komersial dengan realitas operasional enterprise di lapangan.
 2. **PT Aplikanusa Lintasarta** (2018 — 2022 | 4 Tahun)
    - *Role:* Service Desk Supervisor & Service Management Analyst
-   - *Fokus:* Supervisi tim 8 analis Service Desk 24/7, Problem Management & Root Cause Analysis (RCA), Service Governance, penyusunan KPI & SLA, audit kepatuhan operasional, konfigurasi ServiceDesk Plus.
-3. **PT Swadharma Duta Data** (2017 — 2018 | 1 Tahun)
+   - *Fokus:* Pimpinan operasional 24/7/365 untuk 8 analis Service Desk melayani backbone ICT perbankan tier-1 & telco nasional. Bertindak sebagai Major Incident Commander (P1/P2), Root Cause Analysis (RCA) & Problem Management yang memangkas insiden kronis sebesar 35%, tata kelola KPI/SLA (FCR, MTTD, MTTR), dan administrasi ManageEngine ServiceDesk Plus.
+3. **PT Swadharma Duta Data** (2017 — 2018 | 1 Year)
    - *Role:* Network Operation Center (NOC) Support Analyst for Banking
-   - *Fokus:* Pemantauan infrastruktur perbankan L1, penanganan insiden sesuai SLA ketat, eskalasi teknis, dan dokumentasi SOP/knowledge base.
+   - *Fokus:* Pemantauan 24/7 infrastruktur transaksi core banking L1 (ATM switching, jaringan finansial), penanganan insiden sesuai SLA ketat, eskalasi teknis Tier-2, dan standarisasi SOP runbook.
 
 ---
 

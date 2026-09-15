@@ -666,7 +666,7 @@ function initProjectModal() {
       // Tags
       const tagsContainer = document.getElementById('modal-tags');
       tagsContainer.innerHTML = data.tags.map(tag => `
-        <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+        <span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800">
           ${tag}
         </span>
       `).join('');

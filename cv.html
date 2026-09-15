@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aditya Fauziyanto - Executive Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 14mm 16mm 14mm 16mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #09090b;
+      background: #ffffff;
+      font-size: 9.5pt;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Container */
+    .cv-container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      border-b: 1.5px solid #09090b;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .name-title h1 {
+      font-size: 22pt;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: #09090b;
+    }
+
+    .name-title .role {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #3f3f46;
+      margin-top: 3px;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-info {
+      text-align: right;
+      font-size: 8.5pt;
+      color: #52525b;
+      line-height: 1.4;
+    }
+
+    .contact-info a {
+      color: #09090b;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styles */
+    .section {
+      margin-bottom: 12px;
+      break-inside: avoid;
+    }
+
+    .section-title {
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #09090b;
+      border-bottom: 1px solid #e4e4e7;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-title span.tagline {
+      font-size: 7.5pt;
+      font-weight: 500;
+      color: #71717a;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
+    /* Summary */
+    .summary-text {
+      color: #27272a;
+      font-size: 9pt;
+      line-height: 1.45;
+      text-align: justify;
+    }
+
+    /* Competencies Grid */
+    .competencies-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 12px;
+    }
+
+    .competency-item {
+      font-size: 8.5pt;
+      color: #3f3f46;
+      display: flex;
+      gap: 4px;
+    }
+
+    .competency-item strong {
+      color: #09090b;
+      font-weight: 600;
+      min-width: 140px;
+    }
+
+    /* Experience Items */
+    .experience-item {
+      margin-bottom: 10px;
+      break-inside: avoid;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .exp-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #09090b;
+      letter-spacing: -0.01em;
+    }
+
+    .exp-date {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #52525b;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .exp-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 8.5pt;
+      color: #52525b;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    .exp-sub .company {
+      color: #18181b;
+      font-weight: 600;
+    }
+
+    .exp-desc {
+      font-size: 8.5pt;
+      color: #52525b;
+      font-style: italic;
+      margin-bottom: 4px;
+      line-height: 1.35;
+    }
+
+    /* Bullet Points */
+    .bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 13px;
+      font-size: 8.5pt;
+      color: #27272a;
+      line-height: 1.4;
+      margin-bottom: 3px;
+      text-align: justify;
+    }
+
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #09090b;
+      font-weight: bold;
+    }
+
+    .bullet-list li strong {
+      color: #09090b;
+      font-weight: 600;
+    }
+
+    /* Skills Pill Chips */
+    .tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 5px;
+    }
+
+    .tag-chip {
+      font-size: 7.5pt;
+      font-weight: 500;
+      background: #f4f4f5;
+      color: #3f3f46;
+      padding: 1px 6px;
+      border-radius: 9999px;
+      border: 1px solid #e4e4e7;
+    }
+
+    /* Portfolio Highlights Table */
+    .portfolio-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-top: 4px;
+    }
+
+    .portfolio-table th {
+      text-align: left;
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #52525b;
+      padding: 4px 6px;
+      border-bottom: 1.5px solid #09090b;
+      background: #f4f4f5;
+    }
+
+    .portfolio-table td {
+      padding: 4px 6px;
+      border-bottom: 1px solid #e4e4e7;
+      vertical-align: top;
+      color: #27272a;
+      line-height: 1.35;
+    }
+
+    .portfolio-table tr:nth-child(even) td {
+      background-color: #fafafa;
+    }
+
+    .portfolio-table .proj-title {
+      font-weight: 600;
+      color: #09090b;
+    }
+
+    .portfolio-table .proj-scope {
+      color: #52525b;
+    }
+
+    .portfolio-table .proj-impact {
+      font-weight: 500;
+      color: #18181b;
+    }
+
+    /* Certifications & Education Grid */
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 12px;
+    }
+
+    .cert-item, .edu-item {
+      font-size: 8.5pt;
+      margin-bottom: 4px;
+    }
+
+    .cert-item strong, .edu-item strong {
+      color: #09090b;
+      font-weight: 600;
+      display: block;
+    }
+
+    .cert-item span, .edu-item span {
+      color: #52525b;
+      font-size: 8pt;
+    }
+
+    /* Page Break Management */
+    .page-break {
+      page-break-before: always;
+      padding-top: 10px;
+    }
+
+    .no-break {
+      break-inside: avoid;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+
+    <!-- =================================================================== -->
+    <!-- HEADER                                                              -->
+    <!-- =================================================================== -->
+    <header class="header">
+      <div class="name-title">
+        <h1>ADITYA FAUZIYANTO</h1>
+        <div class="role">Country Presales & Solutions Architecture Lead – Indonesia</div>
+      </div>
+      <div class="contact-info">
+        <div>Bekasi / Jakarta Area, Indonesia</div>
+        <div><a href="mailto:adityafauziyanto@gmail.com">adityafauziyanto@gmail.com</a> | +62 851 5533 3480</div>
+        <div><a href="https://linkedin.com/in/adityafauzii">linkedin.com/in/adityafauzii</a></div>
+        <div><a href="https://luckywizardd.github.io/aditya-fauziyanto-portfolio/">luckywizardd.github.io/aditya-fauziyanto-portfolio</a></div>
+      </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- 1. EXECUTIVE SUMMARY                                                -->
+    <!-- =================================================================== -->
+    <section class="section">
+      <div class="section-title">
+        <span>Executive Profile</span>
+        <span class="tagline">10+ Years Enterprise IT & Operations</span>
+      </div>
+      <p class="summary-text">
+        High-impact <strong>Country Presales & Solutions Architecture Lead</strong> with over <strong>10+ years of enterprise experience</strong> leading technical presales strategy, enterprise solution architecture, and mission-critical 24/7 IT operations. Proven 100% presales deal-to-delivery track record across multinational corporations, tier-1 banking institutions, regional decacorn superapps, and hyperscale data centers. Deeply specialized in the <strong>Atlassian Cloud ecosystem</strong> (Jira Service Management, Atlassian Cloud Enterprise migrations, relational JSM Assets/CMDB, Forge serverless automation) and <strong>audit-ready Service Governance</strong>. Uniquely bridges commercial presales acumen and high-precision SOW sizing with 4 years of hands-on 24/7 enterprise service desk operational command.
+      </p>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 2. CORE COMPETENCIES MATRIX                                         -->
+    <!-- =================================================================== -->
+    <section class="section">
+      <div class="section-title">
+        <span>Core Competencies & Technical Architecture</span>
+      </div>
+      <div class="competencies-grid">
+        <div class="competency-item">
+          <strong>Technical Presales & Bidding:</strong>
+          <span>C-Level Discovery, RFP/RFI Defense, Precise SOW & Man-Day Sizing, Solution GAP Analysis, POC Demonstrations.</span>
+        </div>
+        <div class="competency-item">
+          <strong>Enterprise ITSM (JSM):</strong>
+          <span>Jira Service Management Cloud/DC, Multi-Tier SLAs, Dynamic Request Catalogs, Multi-Tenant Hierarchy, Approvals.</span>
+        </div>
+        <div class="competency-item">
+          <strong>Service Governance & Compliance:</strong>
+          <span>Major Incident Command, Root Cause Analysis (RCA), Change Advisory Board (CAB), UU PDP Compliance, SLA Audits.</span>
+        </div>
+        <div class="competency-item">
+          <strong>Atlassian Cloud Migration:</strong>
+          <span>Server/DC to Cloud Enterprise (JCMA), Zero-Downtime Cutover, ScriptRunner Groovy-to-REST Refactoring, Atlassian Guard.</span>
+        </div>
+        <div class="competency-item">
+          <strong>Living CMDB & ITAM Architecture:</strong>
+          <span>Relational JSM Assets Schema Design, Blast-Radius Incident Mapping, Device42 Hybrid Auto-Discovery Grid.</span>
+        </div>
+        <div class="competency-item">
+          <strong>Automation & Integrations:</strong>
+          <span>Atlassian Forge Apps, Cloudflare Serverless Workers, REST API Pipelines, SAP S/4HANA & SuccessFactors, Microsoft Sentinel.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 3. PROFESSIONAL EXPERIENCE                                          -->
+    <!-- =================================================================== -->
+    <section class="section">
+      <div class="section-title">
+        <span>Professional Experience</span>
+      </div>
+
+      <!-- Role 1: PT iZeno Teknologi Indonesia -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <div class="exp-title">Country Presales & Solutions Architecture Lead – Indonesia</div>
+          <div class="exp-date">2022 — Present</div>
+        </div>
+        <div class="exp-sub">
+          <span class="company">PT iZeno Teknologi Indonesia</span>
+          <span>Jakarta / Hybrid</span>
+        </div>
+        <div class="exp-desc">
+          Leading the Indonesia technical practice, driving country-level presales strategy, deal scoping, SOW man-day sizing, enterprise ITSM/CMDB architecture, and cloud cutover delivery for multinational clients.
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Country-Level Presales & RFP Defense:</strong> Directed technical presales solutioning and C-level discovery sessions across enterprise accounts; authored winning technical proposals, RFP/RFI responses, and high-accuracy SOW man-day estimations that secured multi-billion-IDR enterprise mandates.</li>
+          <li><strong>Enterprise ITSM & Living CMDB Architecture:</strong> Architected large-scale Jira Service Management (JSM) platforms, bespoke JSM Assets (CMDB) object schemas, multi-tier SLA matrices, and hierarchical approval workflows for regional decacorn superapps, tier-1 commercial banks, pan-Asian hyperscale data centers, and petrochemical groups.</li>
+          <li><strong>Operational-Grade Cloud Migration:</strong> Leveraged deep operational background to engineer zero-loss, zero-downtime migration pipelines from on-premises Jira Server/DC to Atlassian Cloud Enterprise, including a massive 345,000+ ticket migration and 50 man-days of ScriptRunner Groovy-to-REST Cloud modernization.</li>
+          <li><strong>Enterprise Service Governance & Regulatory Compliance:</strong> Designed audit-ready Change Advisory Board (CAB) workflows, regulatory PII data masking engines satisfying statutory Indonesian UU PDP privacy laws, and multi-calendar SLA frameworks that satisfied rigorous central banking audits.</li>
+          <li><strong>Practice Mentorship & Technical Steering:</strong> Guided cross-functional delivery consultants and engineering squads, maintaining implementation excellence, delivery methodology, and high-trust executive stakeholder alignment.</li>
+        </ul>
+        <div class="tags-row">
+          <span class="tag-chip">Country Practice Lead</span>
+          <span class="tag-chip">Technical Presales & SOW</span>
+          <span class="tag-chip">Enterprise JSM Architecture</span>
+          <span class="tag-chip">JSM Assets (CMDB)</span>
+          <span class="tag-chip">Cloud Migration (JCMA)</span>
+          <span class="tag-chip">Service Governance</span>
+        </div>
+      </div>
+
+      <!-- Role 2: PT Aplikanusa Lintasarta -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <div class="exp-title">Service Desk Supervisor & Service Management Analyst</div>
+          <div class="exp-date">2018 — 2022</div>
+        </div>
+        <div class="exp-sub">
+          <span class="company">PT Aplikanusa Lintasarta (Enterprise ICT & Telco Backbone Provider)</span>
+          <span>Jakarta, Indonesia</span>
+        </div>
+        <div class="exp-desc">
+          Spearheaded 24/7 mission-critical IT & telecommunications operations serving tier-1 banking, enterprise telco backbones, and corporate clients. Directed front-line operational governance, major incident command, and multi-tier SLA compliance.
+        </div>
+        <ul class="bullet-list">
+          <li><strong>24/7 Operations Command & Team Leadership:</strong> Directly supervised and mentored a front-line operational force of 8 Service Desk Analysts operating in a continuous 24/7/365 shift rotation, maintaining &gt;98% enterprise client satisfaction and flawless contractual SLA compliance across mission-critical networks.</li>
+          <li><strong>Major Incident Commander (P1/P2):</strong> Served as primary Incident Commander during high-severity network outages, coordinating rapid cross-functional escalations between field engineering, network operations (NOC), third-party carriers, and enterprise client stakeholders to drastically minimize service downtime.</li>
+          <li><strong>Problem Management & Deep RCA:</strong> Spearheaded formal Problem Management frameworks and Root Cause Analysis (RCA) playbooks for unresolved and recurring incidents; facilitated Post-Incident Reviews (PIR) that reduced chronic infrastructure failure recurrence by 35%.</li>
+          <li><strong>Operational KPI Benchmarking & Governance:</strong> Formulated, monitored, and audited core operational metrics (First Contact Resolution / FCR, Mean Time to Detect / MTTD, MTTR), enforcing proactive SLA breach prevention protocols and executive reporting dashboards.</li>
+          <li><strong>ITSM Tooling Optimization (ServiceDesk Plus):</strong> Administered and re-engineered enterprise ITSM platform configurations (ManageEngine ServiceDesk Plus), redesigning approval chains, incident dispatch logic, and change control workflows to align with international enterprise service governance standards.</li>
+        </ul>
+        <div class="tags-row">
+          <span class="tag-chip">24/7 Enterprise Operations</span>
+          <span class="tag-chip">Major Incident Command</span>
+          <span class="tag-chip">Team Leadership (8 Analysts)</span>
+          <span class="tag-chip">Root Cause Analysis (RCA)</span>
+          <span class="tag-chip">KPI & SLA Governance</span>
+          <span class="tag-chip">ServiceDesk Plus</span>
+        </div>
+      </div>
+
+      <!-- Role 3: PT Swadharma Duta Data -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <div class="exp-title">Network Operation Center (NOC) Support Analyst</div>
+          <div class="exp-date">2017 — 2018</div>
+        </div>
+        <div class="exp-sub">
+          <span class="company">PT Swadharma Duta Data (Financial & Banking IT Services)</span>
+          <span>Jakarta, Indonesia</span>
+        </div>
+        <div class="exp-desc">
+          Provided real-time 24/7 Tier-1 technical monitoring and incident containment for mission-critical core banking and inter-bank financial transaction networks.
+        </div>
+        <ul class="bullet-list">
+          <li><strong>24/7 Mission-Critical Financial Surveillance:</strong> Executed continuous real-time surveillance across mission-critical banking infrastructure, ATM switching networks, and core financial transaction systems under strict contractual banking SLAs.</li>
+          <li><strong>Rapid Incident Triage & Escalation:</strong> Diagnosed link degradations and hardware faults in real time, executing rapid first-level containment and coordinating seamless handoffs with Tier-2 infrastructure and telecom provider engineers.</li>
+          <li><strong>Knowledge Base & SOP Standardization:</strong> Authored standard operating procedures (SOPs) and disaster recovery runbooks within the central banking NOC repository, accelerating shift onboarding and incident resolution velocity.</li>
+        </ul>
+        <div class="tags-row">
+          <span class="tag-chip">Banking NOC</span>
+          <span class="tag-chip">24/7 Infrastructure Monitoring</span>
+          <span class="tag-chip">Financial Transaction SLAs</span>
+          <span class="tag-chip">Incident Triage & SOPs</span>
+        </div>
+      </div>
+
+      <!-- Role 4: Sab'a System Solution -->
+      <div class="experience-item">
+        <div class="exp-header">
+          <div class="exp-title">Enterprise Network Field Engineer</div>
+          <div class="exp-date">2015 — 2017</div>
+        </div>
+        <div class="exp-sub">
+          <span class="company">Sab'a System Solution (Vendor Partner for Indosat Ooredoo)</span>
+          <span>Greater Jakarta / On-Site</span>
+        </div>
+        <div class="exp-desc">
+          Spearheaded on-site deployment, physical installation, and commissioning of enterprise network infrastructure across corporate client sites for Indosat's B2B enterprise telecommunications division.
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Enterprise On-Site Deployment:</strong> Executed rack-and-stack installations, patch panel cabling, router/switch hardware commissioning, and CPE configuration across enterprise corporate client premises.</li>
+          <li><strong>Site Survey & Physical Testing:</strong> Conducted technical site surveys, physical layer loopback testing, signal attenuation verification, and link stability validations for high-bandwidth leased lines and enterprise MPLS WAN connectivity.</li>
+          <li><strong>Cutover & Handover Management:</strong> Coordinated cutover windows and user acceptance testing (UAT) directly with client IT managers and Indosat network operations, ensuring seamless handovers, zero schedule slippage, and formal acceptance reports (BAST).</li>
+        </ul>
+        <div class="tags-row">
+          <span class="tag-chip">Enterprise Network Deployment</span>
+          <span class="tag-chip">Indosat B2B Vendor</span>
+          <span class="tag-chip">On-Site Commissioning</span>
+          <span class="tag-chip">MPLS & Leased Line WAN</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 4. SELECTED ENTERPRISE DEALS & ARCHITECTURAL HIGHLIGHTS             -->
+    <!-- =================================================================== -->
+    <section class="section no-break">
+      <div class="section-title">
+        <span>Selected Enterprise Track Record</span>
+        <span class="tagline">100% Won via Presales & Delivered</span>
+      </div>
+      <table class="portfolio-table">
+        <thead>
+          <tr>
+            <th style="width: 28%;">Client & Project Scope</th>
+            <th style="width: 32%;">Presales & Architectural Strategy</th>
+            <th style="width: 40%;">Business Outcome & Operational Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="proj-title">Regional Tech Decacorn Superapp<br><span class="proj-scope">Salesforce to JSM Cloud Migration</span></td>
+            <td>Led competitive presales discovery against legacy tools; authored SOW with phased sizing; architected Datahub ETL pipelines.</td>
+            <td class="proj-impact">Migrated <strong>345,000+ historical tickets</strong> with zero data loss; streamlined 205 legacy forms down to 47 dynamic JSM forms (-75% sprawl).</td>
+          </tr>
+          <tr>
+            <td class="proj-title">Pan-Asian Hyperscale Data Centers<br><span class="proj-scope">Mission-Critical ITSM & JSM Assets</span></td>
+            <td>Won international tender by defending live CMDB dependency mapping linking EUC/servers/networks to CAB change control.</td>
+            <td class="proj-impact">Automated change collision prevention across <strong>99.999% uptime</strong> Tier-3/Tier-4 hyperscale facilities; 100% audit-compliant records.</td>
+          </tr>
+          <tr>
+            <td class="proj-title">State-Owned Microfinance BUMN<br><span class="proj-scope">ITSM Portal & ScriptRunner PII Engine</span></td>
+            <td>Spearheaded technical bid addressing statutory Indonesian UU PDP data privacy laws via automated in-flight PII masking.</td>
+            <td class="proj-impact"><strong>100% statutory PII data privacy compliance</strong>; resolved nationwide branch SLA bottlenecks and orphaned account sprawl.</td>
+          </tr>
+          <tr>
+            <td class="proj-title">Leading Commercial Bank<br><span class="proj-scope">Core Banking ITSM & SAP Integration</span></td>
+            <td>Formulated unified architecture consolidating 5 ticketing silos; integrated SAP S/4HANA master data for dynamic CCB approvals.</td>
+            <td class="proj-impact">Unified 5 disparate operational silos into single pane; achieved <strong>100% central banking audit readiness</strong>.</td>
+          </tr>
+          <tr>
+            <td class="proj-title">Regional Automotive Mobility Giant<br><span class="proj-scope">Freshservice & Device42 Hybrid CMDB</span></td>
+            <td>Won tech refresh RFP via live proof-of-concept integrating Freshservice Enterprise with on-premise Device42 auto-discovery grid.</td>
+            <td class="proj-impact">Continuous living CMDB tracking <strong>4,000+ hardware and network nodes</strong>; achieved ~35% Tier-1 ticket deflection via Freddy AI.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 5. CERTIFICATIONS & EDUCATION                                       -->
+    <!-- =================================================================== -->
+    <section class="section no-break">
+      <div class="two-col-grid">
+        <div>
+          <div class="section-title">
+            <span>Certifications & Credentials</span>
+          </div>
+          <div class="cert-item">
+            <strong>ITIL® 4 Specialist: Create, Deliver and Support (CDS)</strong>
+            <span>PeopleCert / AXELOS — Certified Advanced Practitioner in Value Streams & Service Integration</span>
+          </div>
+          <div class="cert-item">
+            <strong>ITIL® 4 Foundation in IT Service Management</strong>
+            <span>PeopleCert / AXELOS — Mastered Four Dimensions of Service Management & Service Value System (SVS)</span>
+          </div>
+        </div>
+        <div>
+          <div class="section-title">
+            <span>Education</span>
+          </div>
+          <div class="edu-item">
+            <strong>Bachelor of Computer Science (S1 Teknik Informatika)</strong>
+            <span>Universitas Mercu Buana (2016 — 2021) | GPA: 3.23 / 4.00</span>
+            <span>Focus: Software Engineering, Database Systems, Computer Networks & Systems Architecture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

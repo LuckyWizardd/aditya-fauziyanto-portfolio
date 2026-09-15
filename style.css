@@ -1,211 +1,143 @@
-/* Custom Styles & Modern Enhancements for Aditya Fauziyanto Portfolio */
+/* ==========================================================================
+   Aditya Fauziyanto Portfolio & CV — shadcn/ui Theme Stylesheet
+   Style inspired by https://ui.shadcn.com (Zinc Theme)
+   ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  --primary: #0052cc;
-  --primary-light: #2684ff;
-  --accent: #0ea5e9;
-  --accent-cyan: #06b6d4;
-  --bg-dark: #070b14;
-  --card-dark: #0f172a;
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;   /* #09090b - pure shadcn zinc-950 */
+  --foreground: 0 0% 98%;        /* #fafafa */
+  --card: 240 10% 3.9%;          /* #09090b */
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;           /* #fafafa */
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;   /* #27272a */
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%; /* #a1a1aa */
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;      /* #27272a - crisp 1px borders */
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
 }
 
 html {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.011em;
 }
 
 code, pre, .font-mono {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Custom Scrollbar */
+/* Minimalist Scrollbar (shadcn style) */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0b1120;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
-  border-radius: 4px;
+  background: #27272a;
+  border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
-}
-
-/* Light mode adjustments */
-html:not(.dark) body {
-  background-color: #f8fafc !important;
-  color: #0f172a !important;
-}
-
-html:not(.dark) header {
-  background-color: rgba(255, 255, 255, 0.88) !important;
-  border-color: #e2e8f0 !important;
-}
-
-html:not(.dark) .nav-link {
-  color: #475569 !important;
-}
-
-html:not(.dark) .nav-link:hover {
-  color: #0f172a !important;
-}
-
-html:not(.dark) .bg-darkbg-800,
-html:not(.dark) .bg-darkbg-800\/40,
-html:not(.dark) .bg-darkbg-800\/60,
-html:not(.dark) .bg-darkbg-800\/80,
-html:not(.dark) .bg-darkbg-800\/90 {
-  background-color: #ffffff !important;
-  border-color: #e2e8f0 !important;
-}
-
-html:not(.dark) .bg-darkbg-900 {
-  background-color: #f8fafc !important;
-}
-
-html:not(.dark) .border-slate-800,
-html:not(.dark) .border-slate-800\/80 {
-  border-color: #e2e8f0 !important;
-}
-
-html:not(.dark) .border-slate-700,
-html:not(.dark) .border-slate-700\/60 {
-  border-color: #cbd5e1 !important;
-}
-
-html:not(.dark) .text-white {
-  color: #0f172a !important;
-}
-
-html:not(.dark) .text-slate-300 {
-  color: #334155 !important;
-}
-
-html:not(.dark) .text-slate-400 {
-  color: #64748b !important;
-}
-
-html:not(.dark) .bg-slate-900,
-html:not(.dark) .bg-slate-900\/60 {
-  background-color: #f1f5f9 !important;
-  color: #334155 !important;
-  border-color: #e2e8f0 !important;
-}
-
-html:not(.dark) .bg-slate-800\/50,
-html:not(.dark) .bg-slate-800\/60,
-html:not(.dark) .bg-slate-800 {
-  background-color: #f1f5f9 !important;
-  color: #0f172a !important;
-  border-color: #e2e8f0 !important;
-}
-
-html:not(.dark) .modal-content {
-  background-color: #ffffff !important;
-  color: #0f172a !important;
-  border-color: #e2e8f0 !important;
-}
-
-html:not(.dark) ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #3f3f46;
 }
 
 html:not(.dark) ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #e4e4e7;
 }
 
 html:not(.dark) ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #d4d4d8;
 }
 
-/* Subtle glowing effects */
-.glow-blue {
-  box-shadow: 0 0 50px -12px rgba(0, 82, 204, 0.25);
+/* Light / Dark Mode Surface Overrides */
+html.dark body {
+  background-color: #09090b !important;
+  color: #fafafa !important;
 }
 
-.glow-card:hover {
-  box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.15);
+html:not(.dark) body {
+  background-color: #ffffff !important;
+  color: #09090b !important;
 }
 
-.glow-pill {
-  box-shadow: 0 0 15px rgba(34, 197, 94, 0.35);
+/* Clean shadcn border utilities */
+.shadcn-border {
+  border: 1px solid rgba(39, 39, 42, 1);
 }
 
-/* Glassmorphism */
-.glass-nav {
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+html:not(.dark) .shadcn-border {
+  border: 1px solid rgba(228, 228, 231, 1);
 }
 
-.glass-card {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+/* Subtle Card Hover Effect (Clean, no neon glow) */
+.shadcn-card {
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* Badge gradients */
-.gradient-text {
-  background: linear-gradient(135deg, #38bdf8 0%, #3b82f6 50%, #818cf8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.shadcn-card:hover {
+  border-color: #52525b !important;
 }
 
-.gradient-text-gold {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+html:not(.dark) .shadcn-card:hover {
+  border-color: #a1a1aa !important;
 }
 
-/* Interactive transitions */
-.transition-smooth {
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+/* Minimalist Badge */
+.shadcn-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
-/* Pulse animation for Open to Work dot */
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.95);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.3);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(0.95);
-    opacity: 0.8;
-  }
-}
-
-.animate-pulse-ring {
-  animation: pulse-ring 2s infinite ease-in-out;
-}
-
-/* Floating animation for hero decorations */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.animate-float {
-  animation: float 4s ease-in-out infinite;
-}
-
-/* Modal transition */
+/* Dialog & Modal Transition */
 .modal-backdrop {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .modal-backdrop.active {
@@ -214,8 +146,8 @@ html:not(.dark) ::-webkit-scrollbar-thumb:hover {
 }
 
 .modal-content {
-  transform: scale(0.95) translateY(20px);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0.96) translateY(8px);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .modal-backdrop.active .modal-content {
@@ -226,7 +158,7 @@ html:not(.dark) ::-webkit-scrollbar-thumb:hover {
 #toast {
   transform: translateY(100px);
   opacity: 0;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
 }
 
 #toast.show {
@@ -238,24 +170,20 @@ html:not(.dark) ::-webkit-scrollbar-thumb:hover {
 @media print {
   body {
     background: white !important;
-    color: #111827 !important;
+    color: #09090b !important;
     font-size: 11pt;
   }
 
   nav, 
+  header,
   #theme-toggle, 
   #mobile-menu-btn,
   .no-print,
-  #contact-form,
+  #contact,
   footer,
-  .project-actions,
   .filter-buttons,
-  .badge-pulse {
+  .case-study-trigger {
     display: none !important;
-  }
-
-  .print-only {
-    display: block !important;
   }
 
   section {
@@ -264,15 +192,15 @@ html:not(.dark) ::-webkit-scrollbar-thumb:hover {
   }
 
   .card-print {
-    border: 1px solid #e5e7eb !important;
+    border: 1px solid #e4e4e7 !important;
     box-shadow: none !important;
     background: white !important;
-    color: #111827 !important;
+    color: #09090b !important;
     page-break-inside: avoid;
   }
 
   a {
     text-decoration: none !important;
-    color: #1d4ed8 !important;
+    color: #09090b !important;
   }
 }

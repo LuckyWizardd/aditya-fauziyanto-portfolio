@@ -12,7 +12,7 @@
 | Atribut | Detail |
 |---|---|
 | **Nama Lengkap** | Aditya Fauziyanto |
-| **Current Role** | Presales Solutions Architect & Enterprise ITSM Architect |
+| **Current Role** | Country Presales & Solutions Architecture Lead – Indonesia |
 | **Spesialisasi** | Technical Presales & RFP Defense, Enterprise ITSM Architecture, Service Governance & Compliance, Jira Service Management (JSM), Atlassian Cloud Migration, JSM Assets (CMDB), Edge/Forge Automation |
 | **Lokasi** | Cikarang Utara, Bekasi / Jabodetabek, Indonesia |
 | **Email** | `adityafauziyanto@gmail.com` |
@@ -26,8 +26,8 @@
 ## 2. Ringkasan Jejak Karier (Work Experience)
 
 1. **PT iZeno Teknologi Indonesia** (2022 — Sekarang)
-   - *Role:* Senior ITSM Consultant & Presales Solutions Architect
-   - *Fokus:* Technical presales solutioning (executive discovery, RFP/RFI responses, SOW man-day sizing, proposal defense), enterprise ITSM architecture (JSM Cloud/DC), Atlassian Cloud Migration (JCMA, ScriptRunner modernization), JSM Assets (CMDB) data modeling, dan Enterprise Service Governance.
+   - *Role:* Country Presales & Solutions Architecture Lead – Indonesia
+   - *Fokus:* Country-level practice leadership, technical presales solutioning (executive discovery, RFP/RFI responses, SOW man-day sizing, proposal defense), enterprise ITSM architecture (JSM Cloud/DC), Atlassian Cloud Migration (JCMA, ScriptRunner modernization), JSM Assets (CMDB) data modeling, dan Enterprise Service Governance.
 2. **PT Aplikanusa Lintasarta** (2018 — 2022 | 4 Tahun)
    - *Role:* Service Desk Supervisor & Service Management Analyst
    - *Fokus:* Supervisi tim 8 analis Service Desk 24/7, Problem Management & Root Cause Analysis (RCA), Service Governance, penyusunan KPI & SLA, audit kepatuhan operasional, konfigurasi ServiceDesk Plus.

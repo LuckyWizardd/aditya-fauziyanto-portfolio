@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Fauziyanto | Presales Solutions Architect & Enterprise ITSM Architect</title>
+  <title>Aditya Fauziyanto | Country Presales & Solutions Architecture Lead – Indonesia</title>
   
-  <meta name="description" content="Portfolio & Professional Profile of Aditya Fauziyanto — Presales Solutions Architect & Enterprise ITSM Architect with 7+ years track record in winning enterprise deals, SOW scoping, service governance, JSM, and cloud migrations.">
+  <meta name="description" content="Portfolio & Executive Profile of Aditya Fauziyanto — Country Presales & Solutions Architecture Lead (Indonesia) specializing in enterprise presales, ITSM architecture, service governance, and Atlassian cloud migrations.">
   <meta name="author" content="Aditya Fauziyanto">
-  <meta name="keywords" content="Presales Solutions Architect, Enterprise ITSM Architect, Technical Presales, Service Governance, Jira Service Management, Cloud Migration, JSM Assets CMDB, iZeno">
+  <meta name="keywords" content="Country Presales Lead, Solutions Architecture Lead, Enterprise ITSM Architect, Technical Presales, Service Governance, Jira Service Management, Cloud Migration, JSM Assets CMDB, iZeno">
 
   <!-- OpenGraph Social Sharing -->
-  <meta property="og:title" content="Aditya Fauziyanto — Presales Solutions Architect & Enterprise ITSM Architect">
-  <meta property="og:description" content="7+ Years of Technical Presales Leadership, Enterprise ITSM Architecture, and Audit-Ready Service Governance.">
+  <meta property="og:title" content="Aditya Fauziyanto — Country Presales & Solutions Architecture Lead – Indonesia">
+  <meta property="og:description" content="7+ Years of Country-Level Presales Leadership, Enterprise Solutions Architecture, and Audit-Ready Service Governance.">
   <meta property="og:type" content="website">
 
   <!-- Tailwind CSS CDN -->
@@ -22,32 +22,57 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              50: '#eff6ff',
-              100: '#dbeafe',
-              200: '#bfdbfe',
-              300: '#93c5fd',
-              400: '#60a5fa',
-              500: '#3b82f6',
-              600: '#2563eb',
-              700: '#1d4ed8',
-              800: '#1e40af',
-              900: '#1e3a8a',
+            border: 'hsl(var(--border))',
+            input: 'hsl(var(--input))',
+            ring: 'hsl(var(--ring))',
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            primary: {
+              DEFAULT: 'hsl(var(--primary))',
+              foreground: 'hsl(var(--primary-foreground))',
             },
-            atlassian: {
-              blue: '#0052cc',
-              sky: '#2684ff',
-              navy: '#0747a6',
-              dark: '#172b4d',
+            secondary: {
+              DEFAULT: 'hsl(var(--secondary))',
+              foreground: 'hsl(var(--secondary-foreground))',
             },
-            darkbg: {
-              900: '#070b14',
-              800: '#0c1222',
-              700: '#131d35',
+            destructive: {
+              DEFAULT: 'hsl(var(--destructive))',
+              foreground: 'hsl(var(--destructive-foreground))',
+            },
+            muted: {
+              DEFAULT: 'hsl(var(--muted))',
+              foreground: 'hsl(var(--muted-foreground))',
+            },
+            accent: {
+              DEFAULT: 'hsl(var(--accent))',
+              foreground: 'hsl(var(--accent-foreground))',
+            },
+            card: {
+              DEFAULT: 'hsl(var(--card))',
+              foreground: 'hsl(var(--card-foreground))',
+            },
+            zinc: {
+              950: '#09090b',
+              900: '#18181b',
+              850: '#202023',
+              800: '#27272a',
+              700: '#3f3f46',
+              600: '#52525b',
+              500: '#71717a',
+              400: '#a1a1aa',
+              300: '#d4d4d8',
+              200: '#e4e4e7',
+              100: '#f4f4f5',
+              50: '#fafafa',
             }
           },
+          borderRadius: {
+            lg: 'var(--radius)',
+            md: 'calc(var(--radius) - 2px)',
+            sm: 'calc(var(--radius) - 4px)',
+          },
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
           }
         }
@@ -58,80 +83,80 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom Styles -->
+  <!-- Custom Styles (shadcn/ui theme) -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-darkbg-900 text-slate-100 transition-colors duration-300 selection:bg-blue-600 selection:text-white">
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-150 selection:bg-zinc-900 selection:text-zinc-50 dark:selection:bg-zinc-100 dark:selection:text-zinc-900">
 
   <!-- Scroll Progress Indicator -->
-  <div class="fixed top-0 left-0 w-full h-1 z-50 bg-transparent no-print">
-    <div id="scroll-progress" class="h-full bg-gradient-to-r from-blue-500 via-sky-400 to-indigo-500 w-0 transition-all duration-150"></div>
+  <div class="fixed top-0 left-0 w-full h-[2px] z-50 bg-transparent no-print">
+    <div id="scroll-progress" class="h-full bg-zinc-900 dark:bg-zinc-100 w-0 transition-all duration-100"></div>
   </div>
 
-  <!-- NAVIGATION HEADER -->
-  <header class="fixed top-0 left-0 w-full z-40 border-b border-slate-800/80 bg-darkbg-900/80 glass-nav no-print">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <!-- NAVIGATION HEADER (shadcn minimal nav) -->
+  <header class="fixed top-0 left-0 w-full z-40 border-b border-zinc-200 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
       
       <!-- Brand Logo / Monogram -->
-      <a href="#hero" class="flex items-center gap-3 group">
-        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 to-sky-400 flex items-center justify-center font-bold text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200">
+      <a href="#hero" class="flex items-center gap-2.5 group">
+        <div class="w-7 h-7 rounded-md bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 flex items-center justify-center font-bold text-xs tracking-tight shadow-sm transition-transform duration-150 group-hover:scale-105">
           AF
         </div>
         <div>
-          <span class="font-bold text-lg tracking-tight block text-white group-hover:text-blue-400 transition-colors">
+          <span class="font-semibold text-sm tracking-tight block text-zinc-900 dark:text-zinc-100 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
             Aditya Fauziyanto
           </span>
-          <span class="text-xs text-slate-400 block -mt-0.5 font-medium tracking-wide">
-            Presales & Enterprise ITSM Architect
+          <span class="text-[11px] text-zinc-500 dark:text-zinc-400 block -mt-1 font-normal tracking-normal">
+            Country Lead & Architect
           </span>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#hero" class="nav-link hover:text-white transition-colors">Overview</a>
-        <a href="#expertise" class="nav-link hover:text-white transition-colors">Expertise</a>
-        <a href="#experience" class="nav-link hover:text-white transition-colors">Experience</a>
-        <a href="#projects" class="nav-link hover:text-white transition-colors">Case Studies</a>
-        <a href="#certifications" class="nav-link hover:text-white transition-colors">Credentials</a>
-        <a href="#contact" class="nav-link hover:text-white transition-colors">Contact</a>
+      <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+        <a href="#hero" class="nav-link hover:text-zinc-950 dark:hover:text-zinc-100 transition-colors">Overview</a>
+        <a href="#expertise" class="nav-link hover:text-zinc-950 dark:hover:text-zinc-100 transition-colors">Expertise</a>
+        <a href="#experience" class="nav-link hover:text-zinc-950 dark:hover:text-zinc-100 transition-colors">Experience</a>
+        <a href="#projects" class="nav-link hover:text-zinc-950 dark:hover:text-zinc-100 transition-colors">Case Studies</a>
+        <a href="#certifications" class="nav-link hover:text-zinc-950 dark:hover:text-zinc-100 transition-colors">Credentials</a>
+        <a href="#contact" class="nav-link hover:text-zinc-950 dark:hover:text-zinc-100 transition-colors">Contact</a>
       </nav>
 
       <!-- Nav Actions -->
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2">
         
         <!-- Theme Toggle Button -->
-        <button class="theme-toggle-btn p-2.5 rounded-xl border border-slate-700/60 bg-slate-800/50 hover:bg-slate-700/60 text-slate-300 hover:text-white transition-colors" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
-          <i data-lucide="sun" class="theme-icon-sun w-4 h-4"></i>
-          <i data-lucide="moon" class="theme-icon-moon w-4 h-4 hidden"></i>
+        <button class="theme-toggle-btn h-8 w-8 rounded-md border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          <i data-lucide="sun" class="theme-icon-sun w-3.5 h-3.5"></i>
+          <i data-lucide="moon" class="theme-icon-moon w-3.5 h-3.5 hidden"></i>
         </button>
 
         <!-- Download CV Action -->
-        <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-500 hover:to-sky-400 text-white shadow-md shadow-blue-600/25 transition-all transform hover:-translate-y-0.5">
+        <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="hidden sm:inline-flex items-center gap-1.5 h-8 px-3 rounded-md text-xs font-medium bg-zinc-900 text-zinc-50 hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 transition-colors shadow-sm">
           <i data-lucide="download" class="w-3.5 h-3.5"></i>
           <span>Download CV</span>
         </a>
 
         <!-- Mobile Menu Hamburger -->
-        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl border border-slate-700/60 bg-slate-800/50 text-slate-300 hover:text-white" aria-label="Open Menu">
-          <i data-lucide="menu" class="w-5 h-5"></i>
+        <button id="mobile-menu-btn" class="md:hidden h-8 w-8 rounded-md border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900" aria-label="Open Menu">
+          <i data-lucide="menu" class="w-4 h-4"></i>
         </button>
       </div>
 
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-darkbg-800/95 px-6 py-4 space-y-3">
-      <a href="#hero" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Overview</a>
-      <a href="#expertise" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Expertise</a>
-      <a href="#experience" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Experience</a>
-      <a href="#projects" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Case Studies</a>
-      <a href="#certifications" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Credentials</a>
-      <a href="#contact" class="block text-slate-300 hover:text-blue-400 text-sm font-medium py-1">Contact</a>
-      <div class="pt-2 border-t border-slate-700 flex flex-col gap-2">
-        <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-xs font-semibold bg-blue-600 text-white">
-          <i data-lucide="download" class="w-4 h-4"></i>
+    <div id="mobile-menu" class="hidden md:hidden border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 px-6 py-4 space-y-2.5">
+      <a href="#hero" class="block text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white text-sm font-medium py-1">Overview</a>
+      <a href="#expertise" class="block text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white text-sm font-medium py-1">Expertise</a>
+      <a href="#experience" class="block text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white text-sm font-medium py-1">Experience</a>
+      <a href="#projects" class="block text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white text-sm font-medium py-1">Case Studies</a>
+      <a href="#certifications" class="block text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white text-sm font-medium py-1">Credentials</a>
+      <a href="#contact" class="block text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white text-sm font-medium py-1">Contact</a>
+      <div class="pt-2 border-t border-zinc-200 dark:border-zinc-800 flex flex-col gap-2">
+        <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="flex items-center justify-center gap-2 w-full h-9 rounded-md text-xs font-medium bg-zinc-900 text-zinc-50 dark:bg-zinc-100 dark:text-zinc-900">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
           <span>Download Official CV (PDF)</span>
         </a>
       </div>
@@ -139,199 +164,184 @@
   </header>
 
   <!-- MAIN CONTENT CONTAINER -->
-  <main class="pt-24">
+  <main class="pt-20">
 
     <!-- ===================================================================== -->
-    <!-- 1. HERO SECTION                                                       -->
+    <!-- 1. HERO SECTION (shadcn Minimalist Hero)                              -->
     <!-- ===================================================================== -->
-    <section id="hero" class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28">
-      
-      <!-- Background Ambient Glows -->
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-blue-600/10 blur-[130px] rounded-full pointer-events-none"></div>
-      <div class="absolute -top-20 left-10 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section id="hero" class="relative pt-8 pb-16 md:pt-16 md:pb-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           <!-- Left Column: Pitch & Profile Headline -->
-          <div class="lg:col-span-7 space-y-6">
+          <div class="lg:col-span-7 space-y-5">
             
             <!-- Availability & Credentials Badge -->
-            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-medium">
-              <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span>Open to Enterprise Presales & Solutions Architecture Advisory</span>
+            <div class="inline-flex items-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300 shadow-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Country Presales & Solutions Architecture Lead • Indonesia</span>
             </div>
 
             <!-- Title & Name -->
-            <div class="space-y-3">
-              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            <div class="space-y-2">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-[1.1]">
                 Aditya Fauziyanto
               </h1>
-              <p class="text-xl sm:text-2xl font-semibold gradient-text">
-                Presales Solutions Architect & Enterprise ITSM Architect
+              <p class="text-lg sm:text-xl font-medium text-zinc-600 dark:text-zinc-400 tracking-tight">
+                Country Presales & Solutions Architecture Lead – Indonesia
               </p>
             </div>
 
             <!-- Elevator Pitch -->
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-              Over <strong class="text-white font-semibold">7+ years of experience</strong> leading technical presales, enterprise solution architecture, and strategic deal delivery in the <strong class="text-white font-semibold">Atlassian ecosystem</strong>. Proven track record turning complex enterprise requirements into winning <strong class="text-white font-semibold">Jira Service Management (JSM)</strong> and <strong class="text-white font-semibold">Cloud Migration</strong> proposals—combining accurate man-day scoping (SOW), high-impact C-level discovery, and rigorous <strong class="text-white font-semibold">Enterprise Governance</strong> standards.
+            <p class="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed max-w-2xl">
+              Over <strong class="text-zinc-900 dark:text-zinc-100 font-semibold">7+ years of enterprise experience</strong> leading country-level presales strategy, solutions architecture, and strategic deal delivery in the <strong class="text-zinc-900 dark:text-zinc-100 font-semibold">Atlassian ecosystem</strong>. Driving high-stakes client engagements from executive discovery and precise SOW sizing to scalable Jira Service Management platforms and strict <strong class="text-zinc-900 dark:text-zinc-100 font-semibold">Service Governance</strong>.
             </p>
 
             <!-- Quick Contacts & Badges -->
-            <div class="flex flex-wrap gap-y-2 gap-x-4 text-xs text-slate-400 pt-1">
-              <span class="inline-flex items-center gap-1.5">
-                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-400"></i>
-                Bekasi / Jakarta Area, Indonesia
+            <div class="flex flex-wrap gap-2 text-xs text-zinc-600 dark:text-zinc-400 pt-1">
+              <span class="inline-flex items-center gap-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 px-2.5 py-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-zinc-500"></i>
+                Jakarta / Bekasi, Indonesia
               </span>
-              <span class="inline-flex items-center gap-1.5">
-                <i data-lucide="target" class="w-3.5 h-3.5 text-indigo-400"></i>
-                Presales Leadership & SOW Scoping
+              <span class="inline-flex items-center gap-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 px-2.5 py-1">
+                <i data-lucide="target" class="w-3.5 h-3.5 text-zinc-500"></i>
+                Country Presales & RFP Defense
               </span>
-              <span class="inline-flex items-center gap-1.5">
-                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span class="inline-flex items-center gap-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 px-2.5 py-1">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-zinc-500"></i>
                 Enterprise Service Governance
               </span>
-              <span class="inline-flex items-center gap-1.5">
-                <i data-lucide="building-2" class="w-3.5 h-3.5 text-sky-400"></i>
+              <span class="inline-flex items-center gap-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 px-2.5 py-1">
+                <i data-lucide="building-2" class="w-3.5 h-3.5 text-zinc-500"></i>
                 PT iZeno Teknologi Indonesia
               </span>
             </div>
 
-            <!-- Primary CTAs -->
-            <div class="pt-4 flex flex-wrap gap-3.5">
-              <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-600/30 transition-all transform hover:-translate-y-0.5">
-                <i data-lucide="file-down" class="w-4 h-4"></i>
-                <span>Download CV (PDF)</span>
+            <!-- Primary CTAs (shadcn button variants) -->
+            <div class="pt-2 flex flex-wrap gap-2.5">
+              <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-zinc-900 text-zinc-50 hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 h-9 px-4 shadow-sm gap-2">
+                <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
+                <span>Download CV</span>
               </a>
 
-              <a href="https://wa.me/6285155333480?text=Halo%20Mas%20Aditya%2C%20saya%20tertarik%20berdiskusi%20mengenai%20peluang%20Presales%20%2F%20ITSM%20Architecture%20%2F%20Governance." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 hover:text-white transition-all transform hover:-translate-y-0.5">
-                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+              <a href="https://wa.me/6285155333480?text=Halo%20Mas%20Aditya%2C%20saya%20tertarik%20berdiskusi%20mengenai%20peluang%20Country%20Lead%20%2F%20Presales%20%2F%20ITSM%20Architecture." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 h-9 px-4 gap-2">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-500"></i>
                 <span>Chat via WhatsApp</span>
               </a>
 
-              <button class="copy-btn inline-flex items-center gap-2 px-4 py-3.5 rounded-xl text-sm font-medium bg-slate-800/60 hover:bg-slate-700/80 border border-slate-700/80 text-slate-300 hover:text-white transition-all" data-copy="adityafauziyanto@gmail.com" data-label="Email Copied">
-                <i data-lucide="copy" class="w-4 h-4 text-blue-400"></i>
+              <button class="copy-btn inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-zinc-700 dark:text-zinc-300 h-9 px-3 gap-1.5" data-copy="adityafauziyanto@gmail.com" data-label="Email Copied">
+                <i data-lucide="copy" class="w-3.5 h-3.5 text-zinc-500"></i>
                 <span>Copy Email</span>
               </button>
             </div>
 
             <!-- Social Links Bar -->
-            <div class="pt-2 flex items-center gap-4 text-sm text-slate-400">
-              <span class="text-xs uppercase tracking-wider font-semibold text-slate-500">Profiles:</span>
-              <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5">
-                <i data-lucide="linkedin" class="w-4 h-4"></i>
+            <div class="pt-1 flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400">
+              <span class="font-medium text-zinc-400 dark:text-zinc-500">Connect:</span>
+              <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-1">
+                <i data-lucide="linkedin" class="w-3.5 h-3.5"></i>
                 <span>LinkedIn</span>
               </a>
-              <span class="text-slate-700">•</span>
-              <a href="mailto:adityafauziyanto@gmail.com" class="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5">
-                <i data-lucide="mail" class="w-4 h-4"></i>
-                <span>adityafauziyanto@gmail.com</span>
+              <span>•</span>
+              <a href="mailto:adityafauziyanto@gmail.com" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-1">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Email</span>
               </a>
-              <span class="text-slate-700">•</span>
-              <a href="tel:+6285155333480" class="hover:text-blue-400 transition-colors inline-flex items-center gap-1.5">
-                <i data-lucide="phone" class="w-4 h-4"></i>
+              <span>•</span>
+              <a href="tel:+6285155333480" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-1">
+                <i data-lucide="phone" class="w-3.5 h-3.5"></i>
                 <span>+62 851 5533 3480</span>
               </a>
             </div>
 
           </div>
 
-          <!-- Right Column: Interactive Profile Architecture Card -->
+          <!-- Right Column: shadcn System / Architecture Card -->
           <div class="lg:col-span-5">
-            <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 sm:p-6 shadow-sm space-y-5 shadcn-card">
               
-              <!-- Subtle card background gradient border -->
-              <div class="rounded-3xl p-0.5 bg-gradient-to-b from-blue-500/30 via-slate-700/20 to-transparent shadow-2xl">
-                <div class="rounded-[22px] bg-darkbg-800/90 border border-slate-800 p-6 sm:p-7 space-y-6">
-                  
-                  <!-- Card Header -->
-                  <div class="flex items-center justify-between border-b border-slate-700/60 pb-5">
-                    <div class="flex items-center gap-3">
-                      <div class="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 font-bold text-lg">
-                        <i data-lucide="layers" class="w-6 h-6"></i>
-                      </div>
-                      <div>
-                        <h2 class="text-white font-bold text-base">Solutions Architecture</h2>
-                        <span class="text-xs text-slate-400">Presales, ITSM & Governance Stack</span>
-                      </div>
-                    </div>
-                    <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                      Enterprise Tier
-                    </span>
+              <!-- Card Header -->
+              <div class="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100">
+                    <i data-lucide="layers" class="w-4 h-4"></i>
                   </div>
-
-                  <!-- Stack Breakdown -->
-                  <div class="space-y-4">
-                    
-                    <!-- Presales & Technical Scoping -->
-                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
-                      <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 mt-0.5">
-                        <i data-lucide="target" class="w-4 h-4"></i>
-                      </div>
-                      <div>
-                        <h3 class="text-white text-sm font-semibold">Technical Presales & Deal Scoping</h3>
-                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
-                          Executive Discovery, RFP/RFI Defense, Accurate SOW & Man-Day Sizing, and Stakeholder Solutioning.
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Atlassian JSM & Architecture -->
-                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
-                      <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400 mt-0.5">
-                        <i data-lucide="layout-grid" class="w-4 h-4"></i>
-                      </div>
-                      <div>
-                        <h3 class="text-white text-sm font-semibold">Enterprise ITSM Architecture</h3>
-                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
-                          Jira Service Management, Multi-tier SLAs, Dynamic Catalogs, and JSM Assets (CMDB) Data Modeling.
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Enterprise Governance -->
-                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
-                      <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 mt-0.5">
-                        <i data-lucide="shield-check" class="w-4 h-4"></i>
-                      </div>
-                      <div>
-                        <h3 class="text-white text-sm font-semibold">Enterprise Service Governance</h3>
-                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
-                          Incident & Problem Management (RCA), Change Advisory Board (CAB) Control, and SLA Compliance Audits.
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Cloud Migration & Modern Edge -->
-                    <div class="p-3.5 rounded-xl bg-slate-800/50 border border-slate-700/60 flex items-start gap-3">
-                      <div class="p-2 rounded-lg bg-sky-500/10 text-sky-400 mt-0.5">
-                        <i data-lucide="cloud" class="w-4 h-4"></i>
-                      </div>
-                      <div>
-                        <h3 class="text-white text-sm font-semibold">Cloud Migration & Edge Automation</h3>
-                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">
-                          Jira Server/DC to Atlassian Cloud Enterprise (JCMA), Atlassian Forge Apps, and Serverless Edge Workers.
-                        </p>
-                      </div>
-                    </div>
-
+                  <div>
+                    <h2 class="text-zinc-900 dark:text-zinc-100 font-semibold text-sm">Practice Architecture</h2>
+                    <span class="text-[11px] text-zinc-500 dark:text-zinc-400">Indonesia Country Leadership</span>
                   </div>
+                </div>
+                <span class="px-2 py-0.5 rounded text-[11px] font-medium border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300">
+                  Regional Lead
+                </span>
+              </div>
 
-                  <!-- Quick Stats Bar Inside Card -->
-                  <div class="pt-2 border-t border-slate-700/60 grid grid-cols-2 gap-3 text-center">
-                    <div class="p-2.5 rounded-xl bg-slate-900/60">
-                      <span class="block text-lg font-extrabold text-blue-400">7+ Yrs</span>
-                      <span class="text-[11px] text-slate-400">Presales & ITSM</span>
-                    </div>
-                    <div class="p-2.5 rounded-xl bg-slate-900/60">
-                      <span class="block text-lg font-extrabold text-indigo-400">100%</span>
-                      <span class="text-[11px] text-slate-400">Scoping Win Rate</span>
-                    </div>
+              <!-- Stack Breakdown -->
+              <div class="space-y-2.5">
+                
+                <!-- Presales Leadership -->
+                <div class="p-3 rounded-lg border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50/60 dark:bg-zinc-900/40 flex items-start gap-3">
+                  <div class="p-1.5 rounded-md bg-zinc-200/60 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shrink-0 mt-0.5">
+                    <i data-lucide="target" class="w-3.5 h-3.5"></i>
                   </div>
+                  <div>
+                    <h3 class="text-zinc-900 dark:text-zinc-100 text-xs font-semibold">Country Presales & Deal Scoping</h3>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-xs mt-0.5 leading-relaxed">
+                      Executive Discovery, RFP/RFI Defense, Precise SOW Sizing, and Technical Strategy.
+                    </p>
+                  </div>
+                </div>
 
+                <!-- ITSM Architecture -->
+                <div class="p-3 rounded-lg border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50/60 dark:bg-zinc-900/40 flex items-start gap-3">
+                  <div class="p-1.5 rounded-md bg-zinc-200/60 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shrink-0 mt-0.5">
+                    <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-zinc-900 dark:text-zinc-100 text-xs font-semibold">Enterprise ITSM Architecture</h3>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-xs mt-0.5 leading-relaxed">
+                      Jira Service Management, Multi-tier SLAs, and Relational JSM Assets (CMDB).
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Governance -->
+                <div class="p-3 rounded-lg border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50/60 dark:bg-zinc-900/40 flex items-start gap-3">
+                  <div class="p-1.5 rounded-md bg-zinc-200/60 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shrink-0 mt-0.5">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-zinc-900 dark:text-zinc-100 text-xs font-semibold">Service Governance & Compliance</h3>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-xs mt-0.5 leading-relaxed">
+                      Root Cause Analysis (RCA), CAB Change Control, and Regulatory Audit Compliance.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Cloud & Automation -->
+                <div class="p-3 rounded-lg border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50/60 dark:bg-zinc-900/40 flex items-start gap-3">
+                  <div class="p-1.5 rounded-md bg-zinc-200/60 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shrink-0 mt-0.5">
+                    <i data-lucide="cloud" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-zinc-900 dark:text-zinc-100 text-xs font-semibold">Cloud Migration & Edge Automation</h3>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-xs mt-0.5 leading-relaxed">
+                      Server/DC to Cloud Enterprise (JCMA), Atlassian Forge Apps, and Serverless Workers.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Quick Stats Bar Inside Card -->
+              <div class="pt-2 border-t border-zinc-100 dark:border-zinc-800 grid grid-cols-2 gap-3 text-center">
+                <div class="p-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
+                  <span class="block text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-50 font-mono">7+ Yrs</span>
+                  <span class="text-[11px] text-zinc-500 dark:text-zinc-400">Presales & ITSM</span>
+                </div>
+                <div class="p-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
+                  <span class="block text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-50 font-mono">100%</span>
+                  <span class="text-[11px] text-zinc-500 dark:text-zinc-400">Scoping Win Rate</span>
                 </div>
               </div>
 
@@ -344,34 +354,34 @@
 
 
     <!-- ===================================================================== -->
-    <!-- 2. EXECUTIVE METRICS & IMPACT BANNER                                   -->
+    <!-- 2. EXECUTIVE METRICS & IMPACT BANNER (shadcn Metric Row)               -->
     <!-- ===================================================================== -->
-    <section class="border-y border-slate-800 bg-darkbg-800/60 py-10 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="border-y border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 py-8 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           
           <div class="space-y-1">
-            <div class="text-3xl sm:text-4xl font-extrabold text-white">7+</div>
-            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Years Experience</div>
-            <p class="text-[11px] text-slate-500">Presales Leadership & ITSM Architecture</p>
+            <div class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 font-mono">7+</div>
+            <div class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Years Experience</div>
+            <p class="text-[11px] text-zinc-400 dark:text-zinc-500">Country Presales & ITSM Architecture</p>
           </div>
 
           <div class="space-y-1">
-            <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400">100%</div>
-            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Presales-to-Delivery</div>
-            <p class="text-[11px] text-slate-500">High-Stake Scoping, SOW & RFP Wins</p>
+            <div class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 font-mono">100%</div>
+            <div class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Presales-to-Delivery</div>
+            <p class="text-[11px] text-zinc-400 dark:text-zinc-500">RFP Defense, SOW Sizing & Scoping</p>
           </div>
 
           <div class="space-y-1">
-            <div class="text-3xl sm:text-4xl font-extrabold text-sky-400">345k+</div>
-            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Tickets Migrated</div>
-            <p class="text-[11px] text-slate-500">Mass migration with zero data loss</p>
+            <div class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 font-mono">345k+</div>
+            <div class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Tickets Migrated</div>
+            <p class="text-[11px] text-zinc-400 dark:text-zinc-500">Zero data loss cutover</p>
           </div>
 
           <div class="space-y-1">
-            <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">Audit-Ready</div>
-            <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Enterprise Governance</div>
-            <p class="text-[11px] text-slate-500">Strict SLA, CAB & RCA Compliance</p>
+            <div class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 font-mono">Audit-Ready</div>
+            <div class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Enterprise Governance</div>
+            <p class="text-[11px] text-zinc-400 dark:text-zinc-500">Strict SLA, CAB & RCA Compliance</p>
           </div>
 
         </div>
@@ -382,130 +392,142 @@
     <!-- ===================================================================== -->
     <!-- 3. CORE EXPERTISE & STRATEGIC COMPETENCIES                            -->
     <!-- ===================================================================== -->
-    <section id="expertise" class="py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="expertise" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+        <div class="text-center max-w-2xl mx-auto space-y-2 mb-12">
+          <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
             Core Competencies
           </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
             Presales Mastery, ITSM Architecture & Governance
           </h2>
-          <p class="text-slate-400 text-sm sm:text-base">
+          <p class="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed">
             Bridging commercial presales acumen with deep Atlassian Cloud / Data Center engineering to design audit-compliant, high-value enterprise environments.
           </p>
         </div>
 
-        <!-- 6 Pillars Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 6 Pillars Grid (shadcn Cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           
           <!-- Pillar 1: Presales & Strategic Solutioning -->
-          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-indigo-500/40 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="target" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+                <i data-lucide="target" class="w-4 h-4"></i>
+              </div>
+              <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1.5">
+                Presales & Strategic Solutioning
+              </h3>
+              <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mb-4">
+                Leading high-stakes discovery workshops, translating executive pain points into winning proposals, crafting accurate SOW & man-day sizing, and executing C-level solution defense.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
-              Presales & Strategic Solutioning
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              Leading high-stakes discovery workshops, translating executive pain points into winning proposals, crafting accurate SOW & man-day sizing, and executing C-level solution defense.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> SOW & Man-Day Sizing Precision</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Executive Discovery & GAP Analysis</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Commercial RFP/RFI Solution Defense</li>
+            <ul class="text-xs text-zinc-600 dark:text-zinc-400 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 pt-3.5">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> SOW & Man-Day Sizing Precision</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Executive Discovery & GAP Analysis</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Commercial RFP/RFI Solution Defense</li>
             </ul>
           </div>
 
           <!-- Pillar 2: Enterprise ITSM Architecture -->
-          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-blue-500/40 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="layout-grid" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+                <i data-lucide="layout-grid" class="w-4 h-4"></i>
+              </div>
+              <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1.5">
+                Enterprise ITSM Architecture (JSM)
+              </h3>
+              <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mb-4">
+                Designing customer-centric service catalogs, multi-tier SLAs, automated request queues, and granular permission architectures for complex enterprise directorates.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Enterprise ITSM Architecture (JSM)
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              Designing customer-centric service catalogs, multi-tier SLAs, automated request queues, and granular permission architectures for complex enterprise directorates.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Multi-Tier SLAs & Dynamic Catalogs</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Dynamic Approvals & Escalation Rules</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Enterprise JSM Cloud/DC Topologies</li>
+            <ul class="text-xs text-zinc-600 dark:text-zinc-400 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 pt-3.5">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Multi-Tier SLAs & Dynamic Catalogs</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Dynamic Approvals & Escalation Rules</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Enterprise JSM Cloud/DC Topologies</li>
             </ul>
           </div>
 
           <!-- Pillar 3: Enterprise Service Governance & Compliance -->
-          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-amber-500/40 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-amber-600/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="shield-check" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1.5">
+                Service Governance & Compliance
+              </h3>
+              <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mb-4">
+                Structuring audit-proof Incident, Problem Management (Root Cause Analysis / RCA), and Change Enablement practices with rigorous SLA enforcement and regulatory alignment.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
-              Service Governance & Compliance
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              Structuring audit-proof Incident, Problem Management (Root Cause Analysis / RCA), and Change Enablement practices with rigorous SLA enforcement and regulatory alignment.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Root Cause Analysis (RCA) Frameworks</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Change Advisory Board (CAB) Control</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Regulatory & SLA Compliance Audits</li>
+            <ul class="text-xs text-zinc-600 dark:text-zinc-400 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 pt-3.5">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Root Cause Analysis (RCA) Frameworks</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Change Advisory Board (CAB) Control</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Regulatory & SLA Compliance Audits</li>
             </ul>
           </div>
 
           <!-- Pillar 4: Atlassian Cloud Migration & Modernization -->
-          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-sky-500/40 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-sky-600/10 border border-sky-500/20 text-sky-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="cloud-upload" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+                <i data-lucide="cloud-upload" class="w-4 h-4"></i>
+              </div>
+              <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1.5">
+                Atlassian Cloud Migration
+              </h3>
+              <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mb-4">
+                Leading comprehensive migrations from on-premise Jira Server / Data Center to Atlassian Cloud Enterprise with structured audit, app parity, and zero downtime.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-sky-400 transition-colors">
-              Atlassian Cloud Migration
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              Leading comprehensive migrations from on-premise Jira Server / Data Center to Atlassian Cloud Enterprise with structured audit, app parity, and zero downtime.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> JCMA Tooling & Pre-flight Audits</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> App Parity & ScriptRunner Modernization</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> Atlassian Guard (SSO / SCIM)</li>
+            <ul class="text-xs text-zinc-600 dark:text-zinc-400 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 pt-3.5">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> JCMA Tooling & Pre-flight Audits</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> App Parity & ScriptRunner Modernization</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Atlassian Guard (SSO / SCIM)</li>
             </ul>
           </div>
 
           <!-- Pillar 5: JSM Assets & Relational CMDB -->
-          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-emerald-500/40 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="database" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+                <i data-lucide="database" class="w-4 h-4"></i>
+              </div>
+              <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1.5">
+                JSM Assets & Living CMDB
+              </h3>
+              <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mb-4">
+                Modeling object schemas, relational dependencies, and auto-discovery connectors (Device42) to map IT assets directly to incident blast-radius analysis.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
-              JSM Assets & Living CMDB
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              Modeling object schemas, relational dependencies, and auto-discovery connectors (Device42) to map IT assets directly to incident blast-radius analysis.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Complex AQL Query Engineering</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Hardware & License Lifecycle</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Automated Discovery & Sync (Device42)</li>
+            <ul class="text-xs text-zinc-600 dark:text-zinc-400 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 pt-3.5">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Complex AQL Query Engineering</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Hardware & License Lifecycle</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Automated Discovery & Sync (Device42)</li>
             </ul>
           </div>
 
           <!-- Pillar 6: Edge Automation & Custom Engineering -->
-          <div class="p-6 rounded-2xl bg-darkbg-800/80 border border-slate-800 hover:border-purple-500/40 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-purple-600/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="cpu" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+                <i data-lucide="cpu" class="w-4 h-4"></i>
+              </div>
+              <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1.5">
+                Atlassian Forge & Edge Automation
+              </h3>
+              <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mb-4">
+                Developing custom serverless plugins on Atlassian Forge and Cloudflare Workers to automate ticket triaging, LLM-powered RCA hints, and custom integrations.
+              </p>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
-              Atlassian Forge & Edge Automation
-            </h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              Developing custom serverless plugins on Atlassian Forge and Cloudflare Workers to automate ticket triaging, LLM-powered RCA hints, and custom integrations.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-1.5 border-t border-slate-800 pt-4">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Atlassian Forge Apps & UI Kit</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Cloudflare Workers Edge Handlers</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Jira REST API & Webhook Pipelines</li>
+            <ul class="text-xs text-zinc-600 dark:text-zinc-400 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 pt-3.5">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Atlassian Forge Apps & UI Kit</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Cloudflare Workers Edge Handlers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900 dark:text-zinc-100"></i> Jira REST API & Webhook Pipelines</li>
             </ul>
           </div>
 
@@ -516,191 +538,185 @@
 
 
     <!-- ===================================================================== -->
-    <!-- 4. PROFESSIONAL EXPERIENCE TIMELINE                                   -->
+    <!-- 4. WORK EXPERIENCE TIMELINE (shadcn Timeline)                         -->
     <!-- ===================================================================== -->
-    <section id="experience" class="py-20 bg-darkbg-800/40 border-t border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" class="py-16 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+        <div class="text-center max-w-2xl mx-auto space-y-2 mb-12">
+          <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
             Career Journey
           </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
             Proven Professional Experience
           </h2>
-          <p class="text-slate-400 text-sm sm:text-base">
-            Demonstrated track record of delivering enterprise-grade ITSM consulting, cloud transformations, and operational leadership.
+          <p class="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm">
+            Demonstrated track record of delivering enterprise-grade ITSM consulting, cloud transformations, and country-level technical leadership.
           </p>
         </div>
 
         <!-- Vertical Timeline Container -->
-        <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+        <div class="relative border-l border-zinc-200 dark:border-zinc-800 ml-3 md:ml-8 space-y-8">
           
           <!-- Experience 1: PT iZeno Teknologi Indonesia -->
-          <div class="relative pl-8 md:pl-10 group">
+          <div class="relative pl-6 md:pl-8 group">
             
             <!-- Timeline Pin / Dot -->
-            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-darkbg-900 border-2 border-blue-500 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-lg shadow-blue-500/20">
-              <i data-lucide="building" class="w-4 h-4"></i>
-            </div>
+            <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-zinc-900 dark:bg-zinc-100 ring-4 ring-white dark:ring-zinc-950"></div>
 
             <!-- Content Card -->
-            <div class="p-6 sm:p-7 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-slate-700 transition-colors card-print">
+            <div class="p-5 sm:p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 card-print">
               
-              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
                   2022 — Present (Active)
                 </span>
-                <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
                   <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Jakarta / Hybrid
                 </span>
               </div>
 
-              <h3 class="text-xl font-bold text-white">Senior ITSM Consultant & Presales Solutions Architect</h3>
-              <h4 class="text-base font-semibold text-blue-400 mb-4">PT iZeno Teknologi Indonesia</h4>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Country Presales & Solutions Architecture Lead – Indonesia</h3>
+              <h4 class="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-3">PT iZeno Teknologi Indonesia</h4>
 
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                Serving as the key Solutions Architect and Presales Lead spearheading enterprise ITSM solutioning, Atlassian Cloud migrations, and winning technical scoping across multinational clients.
+              <p class="text-zinc-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
+                Leading the Indonesia technical practice, spearheading enterprise presales solutioning, high-stakes deal architecture, Atlassian Cloud migrations, and service governance across multinational clients.
               </p>
 
               <!-- Key Responsibilities & Achievements -->
-              <div class="space-y-2 text-sm text-slate-300">
+              <div class="space-y-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Led technical presales solutioning and C-level discovery sessions across enterprise accounts, authoring winning technical proposals, RFP/RFI responses, and high-accuracy SOW man-day sizing.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Architected enterprise-grade Jira Service Management (JSM) platforms, bespoke Assets (Insight/CMDB) schemas, dynamic approval workflows, and multi-tier SLA matrices.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Conducted comprehensive gap analyses on clients' legacy IT operations and formulated data-driven workflow improvements aligned with enterprise service governance and compliance standards.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Spearheaded large-scale Atlassian Cloud migrations from on-premises deployments (Jira Server/DC) to Cloud Enterprise, ensuring zero data loss and seamless SSO/SAML identity governance.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Designed strategic executive monitoring dashboards, operational SLA KPIs, and real-time IT performance reporting for director-level visibility.</span>
                 </div>
               </div>
 
               <!-- Tech & Skill Tags -->
-              <div class="flex flex-wrap gap-2 pt-5 mt-4 border-t border-slate-700/60">
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Technical Presales & SOW</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Enterprise ITSM Architecture</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Service Governance & Compliance</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">JSM Assets (CMDB)</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Atlassian Cloud Migration</span>
+              <div class="flex flex-wrap gap-1.5 pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Country Presales Lead</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Enterprise ITSM Architecture</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Service Governance & Compliance</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">JSM Assets (CMDB)</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Atlassian Cloud Migration</span>
               </div>
 
             </div>
           </div>
 
           <!-- Experience 2: PT Aplikanusa Lintasarta -->
-          <div class="relative pl-8 md:pl-10 group">
+          <div class="relative pl-6 md:pl-8 group">
             
-            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-darkbg-900 border-2 border-slate-700 flex items-center justify-center text-slate-400 group-hover:scale-110 group-hover:border-blue-500 group-hover:text-blue-400 transition-all shadow-lg">
-              <i data-lucide="headphones" class="w-4 h-4"></i>
-            </div>
+            <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-zinc-400 dark:bg-zinc-600 ring-4 ring-white dark:ring-zinc-950"></div>
 
-            <div class="p-6 sm:p-7 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-slate-700 transition-colors card-print">
+            <div class="p-5 sm:p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 card-print">
               
-              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
                   2018 — 2022 (4 Years)
                 </span>
-                <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
                   <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Jakarta, Indonesia
                 </span>
               </div>
 
-              <h3 class="text-xl font-bold text-white">Service Desk Supervisor & Service Management Analyst</h3>
-              <h4 class="text-base font-semibold text-slate-300 mb-4">PT Aplikanusa Lintasarta</h4>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Service Desk Supervisor & Service Management Analyst</h3>
+              <h4 class="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-3">PT Aplikanusa Lintasarta</h4>
 
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              <p class="text-zinc-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
                 Managed service desk operations, monitored enterprise SLA commitments, and led Problem Management initiatives across mission-critical telecommunications and IT services.
               </p>
 
-              <div class="space-y-2 text-sm text-slate-300">
+              <div class="space-y-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Directly supervised and mentored a team of 8 Service Desk Analysts, maintaining exceptional client satisfaction and strict SLA adherence.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Spearheaded Problem Management by performing thorough Root Cause Analysis (RCA) on unresolved and recurring incidents, preventing repeat outages.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Formulated and monitored core Service Desk KPIs (First Contact Resolution, Mean Time to Detect, MTTR) to systematically drive support performance.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Maintained and refined IT service management tooling (ServiceDesk Plus), optimizing incident, request, and change management workflows.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Conducted regular service governance assessments, internal compliance audits, and delivered structured operational training programs.</span>
                 </div>
               </div>
 
-              <div class="flex flex-wrap gap-2 pt-5 mt-4 border-t border-slate-700/60">
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Team Leadership (8 Analysts)</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Root Cause Analysis (RCA)</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">ServiceDesk Plus</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Service Governance & Audits</span>
+              <div class="flex flex-wrap gap-1.5 pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Team Leadership (8 Analysts)</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Root Cause Analysis (RCA)</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">ServiceDesk Plus</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Service Governance & Audits</span>
               </div>
 
             </div>
           </div>
 
           <!-- Experience 3: PT Swadharma Duta Data -->
-          <div class="relative pl-8 md:pl-10 group">
+          <div class="relative pl-6 md:pl-8 group">
             
-            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-darkbg-900 border-2 border-slate-700 flex items-center justify-center text-slate-400 group-hover:scale-110 group-hover:border-blue-500 group-hover:text-blue-400 transition-all shadow-lg">
-              <i data-lucide="server" class="w-4 h-4"></i>
-            </div>
+            <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-zinc-400 dark:bg-zinc-600 ring-4 ring-white dark:ring-zinc-950"></div>
 
-            <div class="p-6 sm:p-7 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-slate-700 transition-colors card-print">
+            <div class="p-5 sm:p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 card-print">
               
-              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
                   2017 — 2018 (1 Year)
                 </span>
-                <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
                   <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Jakarta, Indonesia
                 </span>
               </div>
 
-              <h3 class="text-xl font-bold text-white">Network Operation Center (NOC) Support Analyst</h3>
-              <h4 class="text-base font-semibold text-slate-300 mb-4">PT Swadharma Duta Data</h4>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Network Operation Center (NOC) Support Analyst</h3>
+              <h4 class="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-3">PT Swadharma Duta Data</h4>
 
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              <p class="text-zinc-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
                 Provided 24/7 Tier-1 technical monitoring and incident management for high-availability banking and financial transaction networks.
               </p>
 
-              <div class="space-y-2 text-sm text-slate-300">
+              <div class="space-y-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Provided first-level support, resolving incidents and service requests within strict contractual banking SLAs.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Collaborated closely with infrastructure and network engineering teams for expedited incident escalation and root-cause identification.</span>
                 </div>
                 <div class="flex items-start gap-2.5">
-                  <span class="text-blue-400 font-bold mt-0.5">•</span>
+                  <span class="text-zinc-900 dark:text-zinc-100 font-bold mt-0.5">•</span>
                   <span>Authored and updated standard resolution procedures within the central knowledge repository.</span>
                 </div>
               </div>
 
-              <div class="flex flex-wrap gap-2 pt-5 mt-4 border-t border-slate-700/60">
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Banking NOC</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">Network Monitoring</span>
-                <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-700">SLA Tracking</span>
+              <div class="flex flex-wrap gap-1.5 pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Banking NOC</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Network Monitoring</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-600 dark:text-zinc-400">SLA Tracking</span>
               </div>
 
             </div>
@@ -713,504 +729,530 @@
 
 
     <!-- ===================================================================== -->
-    <!-- 5. CASE STUDIES & PORTFOLIO SHOWCASE                                  -->
+    <!-- 5. CASE STUDIES & PORTFOLIO SHOWCASE (shadcn Style)                   -->
     <!-- ===================================================================== -->
-    <section id="projects" class="py-20 border-t border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" class="py-16 border-t border-zinc-200 dark:border-zinc-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
-          <div class="space-y-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+          <div class="space-y-2">
+            <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
               Case Studies & Portfolio
             </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
               Enterprise Deals Won & Delivered
             </h2>
-            <p class="text-slate-400 text-sm sm:text-base max-w-2xl">
+            <p class="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm max-w-2xl">
               Real-world engagements won through technical presales leadership (RFP defense, discovery, SOW scoping) and delivered with enterprise ITSM & governance architecture.
             </p>
           </div>
 
-          <!-- Filter Buttons -->
-          <div class="filter-buttons flex flex-wrap gap-2 p-1.5 rounded-2xl bg-darkbg-800 border border-slate-800 text-xs font-medium">
-            <button class="filter-btn px-4 py-2 rounded-xl bg-blue-600 text-white shadow-md transition-all" data-filter="all">All Engagements</button>
-            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="itsm">ITSM & Governance</button>
-            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="cloud">Cloud Migration</button>
-            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="asset">Assets / CMDB</button>
-            <button class="filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="ai">AI & Automation</button>
+          <!-- Filter Buttons (shadcn Tabs style) -->
+          <div class="filter-buttons inline-flex h-9 items-center justify-center rounded-lg bg-zinc-100 dark:bg-zinc-900 p-1 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-800">
+            <button class="filter-btn inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-xs font-medium bg-white dark:bg-zinc-950 text-zinc-950 dark:text-zinc-50 shadow-sm transition-all" data-filter="all">All</button>
+            <button class="filter-btn inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-all" data-filter="itsm">ITSM & Governance</button>
+            <button class="filter-btn inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-all" data-filter="cloud">Cloud</button>
+            <button class="filter-btn inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-all" data-filter="asset">Assets / CMDB</button>
+            <button class="filter-btn inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-all" data-filter="ai">AI / Edge</button>
           </div>
         </div>
 
-        <!-- Presales Architecture Track Record Banner -->
-        <div class="mb-10 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-blue-950/40 via-indigo-950/30 to-darkbg-800 border border-blue-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div class="flex items-center gap-3.5">
-            <div class="w-10 h-10 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center shrink-0">
-              <i data-lucide="target" class="w-5 h-5"></i>
+        <!-- Presales Callout Alert Banner (shadcn Alert component) -->
+        <div class="mb-8 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-start sm:items-center gap-3">
+            <div class="p-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 shrink-0">
+              <i data-lucide="target" class="w-4 h-4"></i>
             </div>
             <div>
-              <h4 class="text-white text-sm font-bold">100% Presales-to-Delivery Portfolio</h4>
-              <p class="text-slate-400 text-xs mt-0.5">Every featured case study below represents an enterprise mandate won via technical discovery, RFP/RFI responses, SOW man-day sizing, and C-level solution defense.</p>
+              <h4 class="text-xs sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100">100% Presales-to-Delivery Portfolio</h4>
+              <p class="text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Every featured case study below represents an enterprise mandate won via technical discovery, RFP/RFI responses, SOW man-day sizing, and C-level solution defense.</p>
             </div>
           </div>
-          <span class="shrink-0 px-3 py-1.5 rounded-xl bg-indigo-600/20 text-indigo-300 text-xs font-semibold border border-indigo-500/30 flex items-center gap-1.5">
-            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-indigo-400"></i>
-            <span>Presales Won & Delivered</span>
+          <span class="shrink-0 inline-flex items-center gap-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:text-zinc-300">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Presales Won & Delivered
           </span>
         </div>
 
-        <!-- Project Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project Cards Grid (shadcn Cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-          <!-- Project Card: 345k+ Ticket Migration: Salesforce to JSM Cloud -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-blue-500/50 transition-all glow-card" data-category="itsm cloud">
-            <div class="space-y-4">
+          <!-- Project Card: 345k+ Ticket Migration -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm cloud">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   ITSM Transformation
                 </span>
-                <span class="text-xs text-slate-400">Regional Tech Decacorn</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Regional Tech Decacorn</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                345k+ Ticket Migration: Salesforce to JSM Cloud
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Transformed 345,000+ support tickets, multi-directorate workflows, and 205 legacy forms into 47 dynamic JSM forms with Slack & Enterprise Datahub integration.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Zero data loss migration across 345k+ records; 75% form catalog rationalization</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  345k+ Ticket Migration: Salesforce to JSM Cloud
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Transformed 345,000+ support tickets, multi-directorate workflows, and 205 legacy forms into 47 dynamic JSM forms with Slack & Enterprise Datahub integration.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Zero data loss migration across 345k+ records; 75% form catalog rationalization</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Salesforce Migration</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Slack ChatOps</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Datahub ETL</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Cloud</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Salesforce Migration</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Slack ChatOps</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Datahub ETL</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 hover:border-blue-600 transition-all flex items-center justify-center gap-2" data-project="superapp-salesforce-migration">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="superapp-salesforce-migration">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Enterprise Jira Server to Cloud & ScriptRunner Modernization -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-sky-500/50 transition-all glow-card" data-category="cloud itsm">
-            <div class="space-y-4">
+          <!-- Project Card: Enterprise Jira Server to Cloud Modernization -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="cloud itsm">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Cloud Modernization
                 </span>
-                <span class="text-xs text-slate-400">Mobility & Fintech Decacorn</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Mobility & Fintech Decacorn</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Enterprise Jira Server to Cloud & ScriptRunner Modernization
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Executed zero-downtime migration of massive on-premise Jira & Confluence Server environments to Atlassian Cloud Enterprise with 50 man-days of ScriptRunner modernization.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Zero data loss weekend cutover; retired vulnerable on-premise server stack</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Enterprise Jira Server to Cloud & ScriptRunner Modernization
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Executed zero-downtime migration of massive on-premise Jira & Confluence Server environments to Atlassian Cloud Enterprise with 50 man-days of ScriptRunner modernization.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Zero data loss weekend cutover; retired vulnerable on-premise server stack</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Cloud Enterprise</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">ScriptRunner Cloud</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Atlassian Guard SSO</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">qTest</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Cloud Enterprise</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">ScriptRunner Cloud</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Atlassian Guard SSO</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">qTest</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-sky-600/10 hover:bg-sky-600 text-sky-400 hover:text-white border border-sky-500/30 hover:border-sky-600 transition-all flex items-center justify-center gap-2" data-project="superapp-cloud-modernization">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="superapp-cloud-modernization">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Service Portal Refactoring, SLA Matrix & ScriptRunner PII Engine -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-indigo-500/50 transition-all glow-card" data-category="itsm ai">
-            <div class="space-y-4">
+          <!-- Project Card: Service Portal Refactoring & ScriptRunner PII Engine -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm ai">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Enterprise ITSM & PII
                 </span>
-                <span class="text-xs text-slate-400">National Microfinance BUMN</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">National Microfinance BUMN</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Service Portal Refactoring, SLA Matrix & ScriptRunner PII Engine
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Decomposed monolithic enterprise service portal into modular service domains, engineered real-time PII data masking engine, and hardened Atlassian Admin Hub governance.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ 100% statutory PII data privacy compliance; automated domain housekeeping</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Service Portal Refactoring, SLA Matrix & ScriptRunner PII Engine
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Decomposed monolithic enterprise service portal into modular domains, engineered real-time PII data masking engine, and hardened Atlassian Admin Hub governance.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ 100% statutory PII data privacy compliance; automated domain housekeeping</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Jira Service Management</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">ScriptRunner PII Engine</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Admin Hub</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SLA Matrix</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Enterprise</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">ScriptRunner PII</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Admin Hub</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">SLA Matrix</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-indigo-600/10 hover:bg-indigo-600 text-indigo-400 hover:text-white border border-indigo-500/30 hover:border-indigo-600 transition-all flex items-center justify-center gap-2" data-project="microfinance-itsm-pii">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="microfinance-itsm-pii">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB) -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all glow-card" data-category="itsm asset">
-            <div class="space-y-4">
+          <!-- Project Card: Mission-Critical Hyperscale Data Center ITSM -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm asset">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Hyperscale Infrastructure
                 </span>
-                <span class="text-xs text-slate-400">Pan-Asian Data Centers</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Pan-Asian Data Centers</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB)
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Full enterprise service governance and JSM Assets (CMDB) architecture for Tier-3/Tier-4 hyperscale facilities, linking EUC, servers, and network topology to CAB change control.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Automated change collision prevention across 99.999% uptime infrastructure</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Mission-Critical Hyperscale Data Center ITSM & JSM Assets (CMDB)
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Full enterprise service governance and JSM Assets (CMDB) architecture for Tier-3/Tier-4 hyperscale facilities, linking EUC, servers, and network topology to CAB change control.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Automated change collision prevention across 99.999% uptime infrastructure</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets (CMDB)</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">CAB Change Control</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Hardware Schemas</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Cloud</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Assets (CMDB)</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">CAB Change Control</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Hardware Schemas</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 hover:border-emerald-600 transition-all flex items-center justify-center gap-2" data-project="datacenter-mission-critical-itsm">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="datacenter-mission-critical-itsm">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-amber-500/50 transition-all glow-card" data-category="itsm asset">
-            <div class="space-y-4">
+          <!-- Project Card: Core Banking ITSM Consolidation -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm asset">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Core Banking ITSM
                 </span>
-                <span class="text-xs text-slate-400">Leading Commercial Bank</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Leading Commercial Bank</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Unified 5 fragmented banking ticketing silos into an integrated JSM ecosystem with automated SAP S/4HANA employee master data synchronization and audit-ready CCB governance.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ 100% audit-ready banking compliance; unified 5 disparate operational silos</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Core Banking ITSM Consolidation & SAP S/4HANA Master Data Integration
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Unified 5 fragmented banking ticketing silos into an integrated JSM ecosystem with automated SAP S/4HANA employee master data synchronization and audit-ready CCB governance.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ 100% audit-ready banking compliance; unified 5 disparate operational silos</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Enterprise</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SAP S/4HANA Integration</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">CCB Approvals</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Enterprise</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">SAP S/4HANA</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Assets</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">CCB Approvals</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-amber-600/10 hover:bg-amber-600 text-amber-400 hover:text-white border border-amber-500/30 hover:border-amber-600 transition-all flex items-center justify-center gap-2" data-project="commercial-banking-itsm">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="commercial-banking-itsm">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Unified ITSM/CMDB Architecture & Multi-System ITOM Integration -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-purple-500/50 transition-all glow-card" data-category="itsm asset">
-            <div class="space-y-4">
+          <!-- Project Card: Unified ITSM/CMDB Architecture & ITOM Integration -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm asset">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Broadcasting & ITOM
                 </span>
-                <span class="text-xs text-slate-400">National Broadcaster</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">National Broadcaster</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Unified ITSM/CMDB Architecture & Multi-System ITOM Integration
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Enterprise ITSM and living CMDB platform interconnecting JSM Cloud with SAP Solution Manager, SAP Signavio, Microsoft Intune, and HCL BigFix for automated endpoint sync.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Single-pane CMDB bridging broadcast technology and enterprise IT assets</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Unified ITSM/CMDB Architecture & Multi-System ITOM Integration
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Enterprise ITSM and living CMDB platform interconnecting JSM Cloud with SAP Solution Manager, SAP Signavio, Microsoft Intune, and HCL BigFix for automated endpoint sync.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Single-pane CMDB bridging broadcast technology and enterprise IT assets</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets (CMDB)</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Microsoft Intune</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">HCL BigFix</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SAP SolMan</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Assets (CMDB)</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Microsoft Intune</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">HCL BigFix</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">SAP SolMan</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-purple-600/10 hover:bg-purple-600 text-purple-400 hover:text-white border border-purple-500/30 hover:border-purple-600 transition-all flex items-center justify-center gap-2" data-project="broadcasting-media-itsm">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="broadcasting-media-itsm">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-blue-500/50 transition-all glow-card" data-category="itsm asset">
-            <div class="space-y-4">
+          <!-- Project Card: Petrochemical Multi-Tenant ITSM -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm asset">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Multi-Tenant Industry
                 </span>
-                <span class="text-xs text-slate-400">Petrochemical Group (ID/SG)</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Petrochemical Group (ID/SG)</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Dual-tenant Atlassian Cloud architecture across Indonesian chemical manufacturing facilities and Singapore regional HQ, featuring 5 Asset schemas and live SAP SuccessFactors sync.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Automated HR reporting hierarchy; standardized dual-country operations</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Cross-Border Multi-Tenant ITSM & SAP SuccessFactors HR Integration
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Dual-tenant Atlassian Cloud architecture across Indonesian chemical manufacturing facilities and Singapore regional HQ, featuring 5 Asset schemas and live SAP SuccessFactors sync.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Automated HR reporting hierarchy; standardized dual-country operations</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud Premium</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">SAP SuccessFactors</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Multi-Tenant</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Cloud Premium</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">SAP SuccessFactors</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Multi-Tenant</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Assets</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 hover:border-blue-600 transition-all flex items-center justify-center gap-2" data-project="petrochemical-multitenant-itsm">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="petrochemical-multitenant-itsm">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all glow-card" data-category="itsm asset">
-            <div class="space-y-4">
+          <!-- Project Card: Automotive ITSM Refresh & Device42 -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm asset">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Automotive & ITAM
                 </span>
-                <span class="text-xs text-slate-400">Regional Automotive Giant</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Regional Automotive Giant</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Replaced legacy ITSM with Freshservice Enterprise + Freddy AI Copilot, backed by an on-premise Device42 auto-discovery grid (Main Appliance, WDS, Remote Collectors) probing 4,000+ assets.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Continuous living CMDB for 4k+ assets; ~35% L1 query deflection via AI</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Enterprise ITSM Tech Refresh & Device42 Hybrid Living CMDB Auto-Discovery
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Replaced legacy ITSM with Freshservice Enterprise + Freddy AI Copilot, backed by an on-premise Device42 auto-discovery grid (Main Appliance, WDS, Remote Collectors) probing 4,000+ assets.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Continuous living CMDB for 4k+ assets; ~35% L1 query deflection via AI</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Freshservice Enterprise</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Device42 Auto-Discovery</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Living CMDB</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Freddy AI</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Freshservice Enterprise</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Device42 Auto-Discovery</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Living CMDB</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Freddy AI</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 hover:border-emerald-600 transition-all flex items-center justify-center gap-2" data-project="automotive-freshservice-device42">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="automotive-freshservice-device42">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-sky-500/50 transition-all glow-card" data-category="itsm cloud">
-            <div class="space-y-4">
+          <!-- Project Card: Maritime SecOps ITSM -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm cloud">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Maritime & SecOps
                 </span>
-                <span class="text-xs text-slate-400">Global Shipping (100+ Ports)</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Global Shipping (100+ Ports)</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Phased JSM Cloud Premium rollout across 100+ shipping port agencies with automated Microsoft Sentinel SIEM incident dispatch, Site24x7 monitoring, and Azure DevOps integration.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Instantaneous automated cyber-incident dispatch; unified 100+ port offices</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Global Maritime ITSM Modernization & Microsoft Sentinel SecOps Integration
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Phased JSM Cloud Premium rollout across 100+ shipping port agencies with automated Microsoft Sentinel SIEM incident dispatch, Site24x7 monitoring, and Azure DevOps integration.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Instantaneous automated cyber-incident dispatch; unified 100+ port offices</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud Premium</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Microsoft Sentinel SIEM</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Site24x7</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Git Integration</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Cloud Premium</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Microsoft Sentinel SIEM</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Site24x7</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Git Integration</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-sky-600/10 hover:bg-sky-600 text-sky-400 hover:text-white border border-sky-500/30 hover:border-sky-600 transition-all flex items-center justify-center gap-2" data-project="maritime-logistics-secops-itsm">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="maritime-logistics-secops-itsm">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: High-Assurance Digital Banking ITSM Transformation & MTTR Optimization -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-amber-500/50 transition-all glow-card" data-category="itsm asset">
-            <div class="space-y-4">
+          <!-- Project Card: Digital Banking ITSM -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm asset">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Digital Banking ITSM
                 </span>
-                <span class="text-xs text-slate-400">Regional Investment Bank</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Regional Investment Bank</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                High-Assurance Digital Banking ITSM Transformation & MTTR Optimization
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Modernized banking service desk operations with automated P1/P2 alerting matrices, JSM Assets infrastructure dependency mapping, and Confluence self-service deflection.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Slashed banking MTTR; 100% compliance with financial regulatory audits</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  High-Assurance Digital Banking ITSM Transformation & MTTR Optimization
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Modernized banking service desk operations with automated P1/P2 alerting matrices, JSM Assets infrastructure dependency mapping, and Confluence self-service deflection.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Slashed banking MTTR; 100% compliance with financial regulatory audits</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Enterprise</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Assets (CMDB)</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Strict Financial SLAs</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Confluence KB</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Enterprise</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Assets (CMDB)</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Strict Financial SLAs</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Confluence KB</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-amber-600/10 hover:bg-amber-600 text-amber-400 hover:text-white border border-amber-500/30 hover:border-amber-600 transition-all flex items-center justify-center gap-2" data-project="digital-banking-itsm">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="digital-banking-itsm">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-indigo-500/50 transition-all glow-card" data-category="itsm">
-            <div class="space-y-4">
+          <!-- Project Card: Manufacturing ITSM -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="itsm">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Manufacturing ITSM
                 </span>
-                <span class="text-xs text-slate-400">Multinational Agri-Food</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Multinational Agri-Food</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Standardized IT service operations across international food milling and feed manufacturing plants with multi-calendar SLAs, hierarchical authorization, and automated PIR.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Retired manual email ticketing; zero SLA calculation disputes across plants</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Enterprise Manufacturing ITSM & Multi-Calendar Plant SLA Standardization
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Standardized IT service operations across international food milling and feed manufacturing plants with multi-calendar SLAs, hierarchical authorization, and automated PIR.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Retired manual email ticketing; zero SLA calculation disputes across plants</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">JSM Cloud</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Multi-Calendar SLAs</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Manufacturing ITSM</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Problem PIR</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">JSM Cloud</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Multi-Calendar SLAs</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Manufacturing ITSM</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Problem PIR</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-indigo-600/10 hover:bg-indigo-600 text-indigo-400 hover:text-white border border-indigo-500/30 hover:border-indigo-600 transition-all flex items-center justify-center gap-2" data-project="agri-food-manufacturing-itsm">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="agri-food-manufacturing-itsm">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: JIRA AI Administrator & Autonomous Incident Triaging Engine -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-purple-500/50 transition-all glow-card" data-category="ai itsm">
-            <div class="space-y-4">
+          <!-- Project Card: JIRA AI Administrator -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="ai itsm">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   AI Edge Automation
                 </span>
-                <span class="text-xs text-slate-400">Cloudflare Edge Workers</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Cloudflare Edge Workers</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                JIRA AI Administrator & Autonomous Incident Triaging Engine
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Serverless edge worker orchestrating Large Language Models to triage incoming tickets, infer categories, and synthesize instant Root Cause Analysis hypotheses.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ ~65% reduction in manual Tier-1 triage overhead; zero server maintenance</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  JIRA AI Administrator & Autonomous Incident Triaging Engine
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Serverless edge worker orchestrating Large Language Models to triage incoming tickets, infer categories, and synthesize instant Root Cause Analysis hypotheses.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ ~65% reduction in manual Tier-1 triage overhead; zero server maintenance</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Cloudflare Workers</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">LLM Prompt Pipelines</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Jira REST APIs</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">TypeScript</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Cloudflare Workers</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">LLM Pipelines</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Jira REST APIs</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">TypeScript</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-purple-600/10 hover:bg-purple-600 text-purple-400 hover:text-white border border-purple-500/30 hover:border-purple-600 transition-all flex items-center justify-center gap-2" data-project="jira-ai-admin">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="jira-ai-admin">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </div>
 
-          <!-- Project Card: Cloud-Native Atlassian Forge Apps & Enterprise Extension Plugins -->
-          <div class="project-card flex flex-col justify-between p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all glow-card" data-category="ai cloud">
-            <div class="space-y-4">
+          <!-- Project Card: Cloud-Native Atlassian Forge Apps -->
+          <div class="project-card flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card" data-category="ai cloud">
+            <div class="space-y-3">
               <div class="flex items-center justify-between">
-                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                   Platform Engineering
                 </span>
-                <span class="text-xs text-slate-400">Atlassian Forge Suite</span>
+                <span class="text-xs text-zinc-500 dark:text-zinc-400 font-medium">Atlassian Forge Suite</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                Cloud-Native Atlassian Forge Apps & Enterprise Extension Plugins
-              </h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Building serverless Atlassian Forge micro-applications with custom UI kits, secure web triggers, and backend resolvers inside Atlassian Cloud compute environment.
-              </p>
-              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1">
-                <div class="text-slate-400 font-semibold text-[11px] uppercase">Business Impact:</div>
-                <div class="text-emerald-400 font-medium">★ Zero external hosting footprint; eliminated third-party middleware fees</div>
+              <div>
+                <h3 class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 leading-snug">
+                  Cloud-Native Atlassian Forge Apps & Enterprise Extension Plugins
+                </h3>
+                <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed mt-1.5">
+                  Building serverless Atlassian Forge micro-applications with custom UI kits, secure web triggers, and backend resolvers inside Atlassian Cloud compute environment.
+                </p>
+              </div>
+              <div class="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-3 text-xs text-zinc-600 dark:text-zinc-400 space-y-0.5">
+                <div class="font-medium text-zinc-900 dark:text-zinc-200 text-[11px] uppercase tracking-wider">Business Impact:</div>
+                <div class="text-[11px]">★ Zero external hosting footprint; eliminated third-party middleware fees</div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-slate-700/60 space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Atlassian Forge</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Node.js</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Forge UI Kit</span>
-                <span class="px-2 py-0.5 rounded text-[11px] bg-slate-900 text-slate-400 border border-slate-700">Cloud Security</span>
+            <div class="pt-4 mt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+              <div class="flex flex-wrap gap-1">
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Atlassian Forge</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Node.js</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Forge UI Kit</span>
+                <span class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600 dark:text-zinc-400">Cloud Security</span>
               </div>
-              <button class="case-study-trigger w-full py-2.5 rounded-xl text-xs font-semibold bg-emerald-600/10 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 hover:border-emerald-600 transition-all flex items-center justify-center gap-2" data-project="forge-plugins">
-                <span>View Architecture Case Study</span>
+              <button class="case-study-trigger w-full h-8 rounded-md border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-xs font-medium text-zinc-900 dark:text-zinc-100 transition-colors flex items-center justify-center gap-1.5" data-project="forge-plugins">
+                <span>View Case Study & Architecture</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
@@ -1223,67 +1265,67 @@
 
 
     <!-- ===================================================================== -->
-    <!-- 6. CERTIFICATIONS & EDUCATION                                         -->
+    <!-- 6. CERTIFICATIONS & EDUCATION (shadcn Style)                          -->
     <!-- ===================================================================== -->
-    <section id="certifications" class="py-20 bg-darkbg-800/40 border-t border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="certifications" class="py-16 bg-zinc-50/50 dark:bg-zinc-900/20 border-t border-zinc-200 dark:border-zinc-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+        <div class="text-center max-w-2xl mx-auto space-y-2 mb-12">
+          <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
             Verified Credentials
           </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
             Certifications & Governance Credentials
           </h2>
-          <p class="text-slate-400 text-sm sm:text-base">
+          <p class="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm">
             Recognized international credentials in Enterprise Service Governance and IT Service Management, backed by formal computer science education.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
           <!-- Cert 1: ITIL 4 Specialist CDS -->
-          <div class="p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-amber-500/50 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="award" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card">
+            <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+              <i data-lucide="award" class="w-4 h-4"></i>
             </div>
-            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 inline-block mb-3">
+            <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300 mb-2.5">
               Advanced Specialist
             </span>
-            <h3 class="text-lg font-bold text-white mb-1">ITIL® 4 Specialist</h3>
-            <h4 class="text-sm font-semibold text-amber-400 mb-3">Create, Deliver and Support (CDS)</h4>
-            <p class="text-slate-400 text-xs leading-relaxed">
+            <h3 class="text-base font-bold text-zinc-900 dark:text-zinc-100 mb-0.5">ITIL® 4 Specialist</h3>
+            <h4 class="text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2">Create, Deliver and Support (CDS)</h4>
+            <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed">
               Issued by PeopleCert / AXELOS. Certified expertise in value streams, service integration, operational workflows, and continuous improvement.
             </p>
           </div>
 
           <!-- Cert 2: ITIL 4 Foundation -->
-          <div class="p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-blue-500/50 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="shield" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card">
+            <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+              <i data-lucide="shield" class="w-4 h-4"></i>
             </div>
-            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 inline-block mb-3">
+            <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300 mb-2.5">
               Foundation
             </span>
-            <h3 class="text-lg font-bold text-white mb-1">ITIL® 4 Foundation</h3>
-            <h4 class="text-sm font-semibold text-blue-400 mb-3">IT Service Management</h4>
-            <p class="text-slate-400 text-xs leading-relaxed">
-              Issued by PeopleCert / AXELOS. Mastered four dimensions of service management, service value system (SVS), and 34 management practices.
+            <h3 class="text-base font-bold text-zinc-900 dark:text-zinc-100 mb-0.5">ITIL® 4 Foundation</h3>
+            <h4 class="text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2">IT Service Management</h4>
+            <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed">
+              Issued by PeopleCert / AXELOS. Mastered four dimensions of service management, service value system (SVS), and management practices.
             </p>
           </div>
 
           <!-- Education: Universitas Mercu Buana -->
-          <div class="p-6 rounded-2xl bg-darkbg-800 border border-slate-800 hover:border-emerald-500/50 transition-all group glow-card">
-            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          <div class="p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700 shadcn-card">
+            <div class="w-9 h-9 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 mb-4">
+              <i data-lucide="graduation-cap" class="w-4 h-4"></i>
             </div>
-            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 inline-block mb-3">
+            <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 text-[11px] font-medium text-zinc-700 dark:text-zinc-300 mb-2.5">
               Bachelor Degree (S1)
             </span>
-            <h3 class="text-lg font-bold text-white mb-1">Universitas Mercu Buana</h3>
-            <h4 class="text-sm font-semibold text-emerald-400 mb-3">S1 Teknik Informatika (2016 — 2021)</h4>
-            <p class="text-slate-400 text-xs leading-relaxed">
-              Graduated with GPA <strong class="text-white">3.23 / 4.00</strong>. Solid foundation in software engineering, database management, computer networks, and systems analysis.
+            <h3 class="text-base font-bold text-zinc-900 dark:text-zinc-100 mb-0.5">Universitas Mercu Buana</h3>
+            <h4 class="text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2">S1 Teknik Informatika (2016 — 2021)</h4>
+            <p class="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed">
+              Graduated with GPA <strong class="text-zinc-900 dark:text-zinc-200 font-mono">3.23 / 4.00</strong>. Solid foundation in software engineering, database management, and computer networks.
             </p>
           </div>
 
@@ -1294,60 +1336,58 @@
 
 
     <!-- ===================================================================== -->
-    <!-- 7. CONTACT & CALL TO ACTION                                           -->
+    <!-- 7. CONTACT & CALL TO ACTION (shadcn Card)                             -->
     <!-- ===================================================================== -->
-    <section id="contact" class="py-20 border-t border-slate-800 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" class="py-16 border-t border-zinc-200 dark:border-zinc-800 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="rounded-3xl p-8 sm:p-12 lg:p-16 bg-gradient-to-tr from-darkbg-800 via-darkbg-800 to-blue-950/40 border border-slate-800 relative overflow-hidden">
+        <div class="rounded-xl p-6 sm:p-10 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-sm relative">
           
-          <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/10 blur-[100px] rounded-full pointer-events-none"></div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
-            <div class="lg:col-span-7 space-y-6">
-              <span class="text-xs font-bold uppercase tracking-wider text-blue-400 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 inline-block">
+            <div class="lg:col-span-7 space-y-4">
+              <span class="inline-flex items-center rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:text-zinc-300">
                 Let's Collaborate
               </span>
-              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-tight">
                 Ready to elevate your Presales & ITSM Architecture?
               </h2>
-              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Whether you need a high-impact <strong class="text-white">Presales Solutions Architect</strong> to win complex enterprise deals, an <strong class="text-white">ITSM Architect</strong> to design scalable Atlassian platforms, or strategic advisory on <strong class="text-white">Enterprise Service Governance</strong>, let's discuss how we can drive results together.
+              <p class="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                Whether you need a high-impact <strong class="text-zinc-900 dark:text-zinc-200">Country Presales Lead</strong> to win complex enterprise deals, an <strong class="text-zinc-900 dark:text-zinc-200">ITSM Architect</strong> to design scalable Atlassian platforms, or strategic advisory on <strong class="text-zinc-900 dark:text-zinc-200">Enterprise Service Governance</strong>, let's discuss how we can drive results together.
               </p>
 
-              <div class="space-y-3 pt-2 text-sm">
-                <div class="flex items-center gap-3">
-                  <div class="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
-                    <i data-lucide="mail" class="w-4 h-4"></i>
+              <div class="space-y-2.5 pt-2 text-xs sm:text-sm">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 shrink-0">
+                    <i data-lucide="mail" class="w-3.5 h-3.5"></i>
                   </div>
                   <div>
-                    <span class="text-xs text-slate-400 block">Direct Email</span>
-                    <a href="mailto:adityafauziyanto@gmail.com" class="text-white font-semibold hover:text-blue-400 transition-colors">
+                    <span class="text-[11px] text-zinc-400 dark:text-zinc-500 block">Direct Email</span>
+                    <a href="mailto:adityafauziyanto@gmail.com" class="text-zinc-900 dark:text-zinc-100 font-medium hover:underline">
                       adityafauziyanto@gmail.com
                     </a>
                   </div>
                 </div>
 
-                <div class="flex items-center gap-3">
-                  <div class="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
-                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-emerald-500 shrink-0">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
                   </div>
                   <div>
-                    <span class="text-xs text-slate-400 block">WhatsApp & Phone</span>
-                    <a href="https://wa.me/6285155333480" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-emerald-400 transition-colors">
+                    <span class="text-[11px] text-zinc-400 dark:text-zinc-500 block">WhatsApp & Phone</span>
+                    <a href="https://wa.me/6285155333480" target="_blank" rel="noopener noreferrer" class="text-zinc-900 dark:text-zinc-100 font-medium hover:underline">
                       +62 851 5533 3480
                     </a>
                   </div>
                 </div>
 
-                <div class="flex items-center gap-3">
-                  <div class="w-9 h-9 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
-                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100 shrink-0">
+                    <i data-lucide="linkedin" class="w-3.5 h-3.5"></i>
                   </div>
                   <div>
-                    <span class="text-xs text-slate-400 block">LinkedIn Profile</span>
-                    <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-sky-400 transition-colors">
+                    <span class="text-[11px] text-zinc-400 dark:text-zinc-500 block">LinkedIn Profile</span>
+                    <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="text-zinc-900 dark:text-zinc-100 font-medium hover:underline">
                       linkedin.com/in/adityafauzii
                     </a>
                   </div>
@@ -1355,23 +1395,23 @@
               </div>
             </div>
 
-            <div class="lg:col-span-5 flex flex-col gap-3.5">
-              <a href="https://wa.me/6285155333480?text=Halo%20Mas%20Aditya%2C%20saya%20melihat%20portfolio%20web%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl font-bold text-sm bg-emerald-600 hover:bg-emerald-500 text-white shadow-xl shadow-emerald-600/25 transition-all text-center flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <div class="lg:col-span-5 flex flex-col gap-2.5">
+              <a href="https://wa.me/6285155333480?text=Halo%20Mas%20Aditya%2C%20saya%20melihat%20portfolio%20web%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" rel="noopener noreferrer" class="w-full h-10 rounded-md font-medium text-xs sm:text-sm bg-zinc-900 text-zinc-50 hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 transition-colors text-center flex items-center justify-center gap-2 shadow-sm">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
                 <span>Direct Chat on WhatsApp</span>
               </a>
 
-              <a href="mailto:adityafauziyanto@gmail.com?subject=ITSM%20Consulting%20%2F%20Career%20Opportunity%20-%20Aditya%20Fauziyanto" class="w-full py-4 rounded-xl font-bold text-sm bg-blue-600 hover:bg-blue-500 text-white shadow-xl shadow-blue-600/25 transition-all text-center flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
-                <i data-lucide="send" class="w-5 h-5"></i>
+              <a href="mailto:adityafauziyanto@gmail.com?subject=ITSM%20Consulting%20%2F%20Career%20Opportunity%20-%20Aditya%20Fauziyanto" class="w-full h-10 rounded-md font-medium text-xs sm:text-sm border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors text-center flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
                 <span>Send Professional Inquiry</span>
               </a>
 
-              <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="w-full py-3.5 rounded-xl font-semibold text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all text-center flex items-center justify-center gap-2">
-                <i data-lucide="download" class="w-4 h-4"></i>
+              <a href="./assets/Aditya_Fauziyanto_CV.pdf" download="CV_Aditya_Fauziyanto.pdf" class="w-full h-9 rounded-md font-medium text-xs border border-zinc-200 dark:border-zinc-800 bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-colors text-center flex items-center justify-center gap-2">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
                 <span>Download Official CV (PDF)</span>
               </a>
 
-              <button onclick="window.printCV()" class="w-full py-3 rounded-xl font-medium text-xs bg-slate-900/60 hover:bg-slate-900 text-slate-400 hover:text-white border border-slate-800 transition-all flex items-center justify-center gap-2">
+              <button onclick="window.printCV()" class="w-full h-9 rounded-md font-medium text-xs border border-dashed border-zinc-300 dark:border-zinc-700/80 bg-transparent hover:bg-zinc-50 dark:hover:bg-zinc-900 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex items-center justify-center gap-2">
                 <i data-lucide="printer" class="w-3.5 h-3.5"></i>
                 <span>Print ATS-Friendly Format</span>
               </button>
@@ -1387,60 +1427,60 @@
   </main>
 
 
-  <!-- FOOTER -->
-  <footer class="border-t border-slate-800 bg-darkbg-900 py-10 no-print">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+  <!-- FOOTER (shadcn Minimal Footer) -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-zinc-950 py-8 no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 dark:text-zinc-400">
       <div>
-        © 2026 Aditya Fauziyanto. Senior ITSM Consultant & Atlassian Solutions Architect.
+        © 2026 Aditya Fauziyanto. Country Presales & Solutions Architecture Lead.
       </div>
       <div class="flex items-center gap-4">
-        <a href="#hero" class="hover:text-slate-400 transition-colors">Back to top ↑</a>
+        <a href="#hero" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Back to top ↑</a>
         <span>•</span>
-        <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">LinkedIn</a>
+        <a href="https://linkedin.com/in/adityafauzii" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">LinkedIn</a>
         <span>•</span>
-        <a href="mailto:adityafauziyanto@gmail.com" class="hover:text-blue-400 transition-colors">Email</a>
+        <a href="mailto:adityafauziyanto@gmail.com" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Email</a>
       </div>
     </div>
   </footer>
 
 
   <!-- ===================================================================== -->
-  <!-- CASE STUDY DETAIL MODAL                                               -->
+  <!-- CASE STUDY DETAIL MODAL (shadcn Dialog Component Style)               -->
   <!-- ===================================================================== -->
-  <div id="project-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md overflow-y-auto no-print">
-    <div class="modal-content relative w-full max-w-3xl my-8 rounded-3xl bg-darkbg-800 border border-slate-700 shadow-2xl p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto">
+  <div id="project-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm overflow-y-auto no-print">
+    <div class="modal-content relative w-full max-w-2xl my-8 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-2xl p-6 sm:p-8 space-y-5 max-h-[90vh] overflow-y-auto">
       
       <!-- Modal Close Button -->
-      <button id="modal-close-btn" class="absolute top-6 right-6 p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors" aria-label="Close Modal">
-        <i data-lucide="x" class="w-5 h-5"></i>
+      <button id="modal-close-btn" class="absolute top-5 right-5 h-8 w-8 rounded-md border border-zinc-200 dark:border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors" aria-label="Close Modal">
+        <i data-lucide="x" class="w-4 h-4"></i>
       </button>
 
       <!-- Modal Header -->
-      <div class="space-y-2 pr-10">
+      <div class="space-y-1.5 pr-10">
         <div class="flex flex-wrap items-center gap-2 text-xs">
-          <span id="modal-client" class="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 font-semibold border border-blue-500/20">Client</span>
-          <span class="text-slate-500">•</span>
-          <span id="modal-role" class="text-slate-300 font-medium">Architect</span>
-          <span class="text-slate-500">•</span>
-          <span id="modal-timeline" class="text-slate-500">Timeline</span>
+          <span id="modal-client" class="rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 font-medium text-zinc-700 dark:text-zinc-300">Client</span>
+          <span class="text-zinc-400 dark:text-zinc-600">•</span>
+          <span id="modal-role" class="text-zinc-600 dark:text-zinc-400 font-medium">Architect</span>
+          <span class="text-zinc-400 dark:text-zinc-600">•</span>
+          <span id="modal-timeline" class="text-zinc-400 dark:text-zinc-500 font-mono text-[11px]">Timeline</span>
         </div>
-        <h3 id="modal-title" class="text-2xl font-bold text-white leading-tight">Project Title</h3>
-        <p id="modal-summary" class="text-slate-300 text-sm leading-relaxed">Project summary...</p>
+        <h3 id="modal-title" class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-snug">Project Title</h3>
+        <p id="modal-summary" class="text-zinc-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed">Project summary...</p>
       </div>
 
       <!-- Presales Strategy & Architecture Won Box -->
-      <div class="p-4 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 space-y-1.5">
-        <div class="flex items-center gap-2 text-indigo-400 text-xs font-bold uppercase tracking-wider">
-          <i data-lucide="target" class="w-4 h-4"></i>
+      <div class="p-3.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 space-y-1">
+        <div class="flex items-center gap-1.5 text-zinc-900 dark:text-zinc-100 text-xs font-semibold uppercase tracking-wider">
+          <i data-lucide="target" class="w-3.5 h-3.5"></i>
           <span>Presales Strategy & Architecture Won</span>
         </div>
-        <p id="modal-presales-scope" class="text-slate-300 text-xs sm:text-sm leading-relaxed"></p>
+        <p id="modal-presales-scope" class="text-zinc-600 dark:text-zinc-400 text-xs leading-relaxed"></p>
       </div>
 
       <!-- Problem / Challenge Section -->
-      <div class="p-4 rounded-2xl bg-rose-500/5 border border-rose-500/20 space-y-2">
-        <div class="flex items-center gap-2 text-rose-400 text-xs font-bold uppercase tracking-wider">
-          <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+      <div class="p-3.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 space-y-2">
+        <div class="flex items-center gap-1.5 text-zinc-900 dark:text-zinc-200 text-xs font-semibold uppercase tracking-wider">
+          <i data-lucide="alert-circle" class="w-3.5 h-3.5 text-zinc-500"></i>
           <span>The Business Challenge</span>
         </div>
         <ul id="modal-challenges" class="space-y-1.5 pl-1">
@@ -1449,9 +1489,9 @@
       </div>
 
       <!-- Architectural Solution Section -->
-      <div class="p-4 rounded-2xl bg-blue-500/5 border border-blue-500/20 space-y-2">
-        <div class="flex items-center gap-2 text-blue-400 text-xs font-bold uppercase tracking-wider">
-          <i data-lucide="check-circle" class="w-4 h-4"></i>
+      <div class="p-3.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 space-y-2">
+        <div class="flex items-center gap-1.5 text-zinc-900 dark:text-zinc-200 text-xs font-semibold uppercase tracking-wider">
+          <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-zinc-500"></i>
           <span>Architectural Solution & Implementation</span>
         </div>
         <ul id="modal-solutions" class="space-y-1.5 pl-1">
@@ -1460,9 +1500,9 @@
       </div>
 
       <!-- Measurable Business Impact Section -->
-      <div class="p-4 rounded-2xl bg-emerald-500/5 border border-emerald-500/20 space-y-2">
-        <div class="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider">
-          <i data-lucide="trending-up" class="w-4 h-4"></i>
+      <div class="p-3.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 space-y-2">
+        <div class="flex items-center gap-1.5 text-zinc-900 dark:text-zinc-200 text-xs font-semibold uppercase tracking-wider">
+          <i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-500"></i>
           <span>Measurable Impact & Results</span>
         </div>
         <ul id="modal-impacts" class="space-y-1.5 pl-1">
@@ -1471,9 +1511,9 @@
       </div>
 
       <!-- Tech Stack Tags -->
-      <div class="space-y-2 pt-2 border-t border-slate-700/60">
-        <span class="text-xs font-semibold text-slate-400 block">Technologies & Frameworks Utilized:</span>
-        <div id="modal-tags" class="flex flex-wrap gap-2">
+      <div class="space-y-1.5 pt-2 border-t border-zinc-100 dark:border-zinc-800">
+        <span class="text-xs font-medium text-zinc-500 dark:text-zinc-400 block">Technologies & Frameworks:</span>
+        <div id="modal-tags" class="flex flex-wrap gap-1.5">
           <!-- Populated dynamically -->
         </div>
       </div>
@@ -1483,13 +1523,13 @@
 
 
   <!-- ===================================================================== -->
-  <!-- TOAST NOTIFICATION POPUP                                              -->
+  <!-- TOAST NOTIFICATION POPUP (shadcn Sonner / Toast Style)                -->
   <!-- ===================================================================== -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 rounded-2xl bg-slate-800 border border-slate-700 text-white shadow-2xl text-xs font-medium no-print">
-    <div class="w-6 h-6 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center">
-      <i data-lucide="check" class="w-3.5 h-3.5"></i>
+  <div id="toast" class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 shadow-lg text-xs font-medium no-print">
+    <div class="w-5 h-5 rounded-md bg-zinc-100 dark:bg-zinc-900 flex items-center justify-center text-zinc-900 dark:text-zinc-100">
+      <i data-lucide="check" class="w-3 h-3"></i>
     </div>
-    <span id="toast-msg">Text copied to clipboard</span>
+    <span id="toast-msg">Copied to clipboard</span>
   </div>
 
 

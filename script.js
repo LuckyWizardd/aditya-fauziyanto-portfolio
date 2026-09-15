@@ -1,6 +1,6 @@
 /**
  * Interactive Script for Aditya Fauziyanto Portfolio & CV
- * Presales Solutions Architect & Enterprise ITSM Architect
+ * Country Presales & Solutions Architecture Lead – Indonesia
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -576,13 +576,13 @@ function initProjectsFilter() {
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Button states
+      // Button states (shadcn tabs style)
       filterBtns.forEach(b => {
-        b.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
-        b.classList.add('bg-slate-100', 'text-slate-600', 'dark:bg-slate-800', 'dark:text-slate-300');
+        b.classList.remove('bg-white', 'text-zinc-950', 'dark:bg-zinc-950', 'dark:text-zinc-50', 'shadow-sm');
+        b.classList.add('text-zinc-600', 'dark:text-zinc-400');
       });
-      btn.classList.add('bg-blue-600', 'text-white', 'shadow-md');
-      btn.classList.remove('bg-slate-100', 'text-slate-600', 'dark:bg-slate-800', 'dark:text-slate-300');
+      btn.classList.add('bg-white', 'text-zinc-950', 'dark:bg-zinc-950', 'dark:text-zinc-50', 'shadow-sm');
+      btn.classList.remove('text-zinc-600', 'dark:text-zinc-400');
 
       const filter = btn.getAttribute('data-filter');
 
